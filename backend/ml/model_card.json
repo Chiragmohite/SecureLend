@@ -21,9 +21,53 @@
     "unauthorized_admin",
     "xss_attempt"
   ],
-  "anomaly_threshold": -0.027230154177277092,
-  "training_rows": 25200,
+  "anomaly_threshold": 0.005151828965038091,
+  "training_rows": 25196,
   "test_rows": 6300,
-  "attack_recall_at_threshold": 0.9628571428571429,
-  "false_positive_rate_at_threshold": 0.1
+  "attack_recall_at_threshold": 0.9747822931785196,
+  "false_positive_rate_at_threshold": 0.21573604060913706,
+  "random_seed": 42,
+  "model_type": "RandomForestClassifier (supervised) + IsolationForest (unsupervised)",
+  "per_class_precision": {
+    "anomalous_traffic": 0.956,
+    "bot_flood": 0.9825,
+    "brute_force_login": 0.9962,
+    "malicious_upload": 0.9745,
+    "normal": 0.8164,
+    "sql_injection": 0.8273,
+    "unauthorized_admin": 0.898,
+    "xss_attempt": 0.8293
+  },
+  "per_class_recall": {
+    "anomalous_traffic": 0.9377,
+    "bot_flood": 0.9962,
+    "brute_force_login": 0.9987,
+    "malicious_upload": 0.9683,
+    "normal": 0.7843,
+    "sql_injection": 0.8463,
+    "unauthorized_admin": 0.9162,
+    "xss_attempt": 0.8335
+  },
+  "per_class_f1": {
+    "anomalous_traffic": 0.9468,
+    "bot_flood": 0.9893,
+    "brute_force_login": 0.9975,
+    "malicious_upload": 0.9714,
+    "normal": 0.8,
+    "sql_injection": 0.8367,
+    "unauthorized_admin": 0.907,
+    "xss_attempt": 0.8314
+  },
+  "feature_importances": {
+    "failed_logins_5min": 0.2212,
+    "requests_per_minute": 0.2175,
+    "payload_size_kb": 0.1576,
+    "contains_script_tag": 0.0881,
+    "contains_sql_keywords": 0.0843,
+    "endpoint_sensitivity": 0.0688,
+    "unique_endpoints_1min": 0.0648,
+    "role_mismatch": 0.0497,
+    "file_ext_risk": 0.0436,
+    "hour_of_day": 0.0044
+  }
 }

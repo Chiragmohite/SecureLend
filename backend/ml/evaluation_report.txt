@@ -1,0 +1,49 @@
+SecureLend IDS -- Model Evaluation Report
+==================================================
+
+Random seed: 42
+Total samples: 31496  (Train: 25196 / Test: 6300)
+
+Classification Report:
+                    precision    recall  f1-score   support
+
+ anomalous_traffic     0.9560    0.9377    0.9468       787
+         bot_flood     0.9825    0.9962    0.9893       787
+ brute_force_login     0.9962    0.9987    0.9975       788
+  malicious_upload     0.9745    0.9683    0.9714       788
+            normal     0.8164    0.7843    0.8000       788
+     sql_injection     0.8273    0.8463    0.8367       787
+unauthorized_admin     0.8980    0.9162    0.9070       788
+       xss_attempt     0.8293    0.8335    0.8314       787
+
+          accuracy                         0.9102      6300
+         macro avg     0.9100    0.9102    0.9100      6300
+      weighted avg     0.9100    0.9102    0.9100      6300
+
+
+Confusion Matrix (rows=true, cols=predicted):
+Classes: [np.str_('anomalous_traffic'), np.str_('bot_flood'), np.str_('brute_force_login'), np.str_('malicious_upload'), np.str_('normal'), np.str_('sql_injection'), np.str_('unauthorized_admin'), np.str_('xss_attempt')]
+[[738  14   3   8   4  14   2   4]
+ [  3 784   0   0   0   0   0   0]
+ [  1   0 787   0   0   0   0   0]
+ [  4   0   0 763   7   6   3   5]
+ [  2   0   0   5 618  66  29  68]
+ [ 19   0   0   3  41 666  18  40]
+ [  1   0   0   0  36  11 722  18]
+ [  4   0   0   4  51  42  30 656]]
+
+Attack recall (headline metric): 0.9748
+False positive rate on normal traffic: 0.2157
+IsolationForest anomaly threshold: 0.0052
+
+Feature importances (RandomForest, sorted):
+  failed_logins_5min: 0.2212
+  requests_per_minute: 0.2175
+  payload_size_kb: 0.1576
+  contains_script_tag: 0.0881
+  contains_sql_keywords: 0.0843
+  endpoint_sensitivity: 0.0688
+  unique_endpoints_1min: 0.0648
+  role_mismatch: 0.0497
+  file_ext_risk: 0.0436
+  hour_of_day: 0.0044

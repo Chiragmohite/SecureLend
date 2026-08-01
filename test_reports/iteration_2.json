@@ -1,0 +1,43 @@
+{
+  "summary": "Iteration 2 focused on verifying (a) real training threshold -0.05246478086634679 loaded into ML scorer and (b) /api/admin/demo/attack now dual-fires rule + ML logs with rich ml_verdict payload, plus (c) frontend SecurityDemo panel renders both RULE and ML badges inline. Result: 12/12 new backend tests PASS. Frontend Playwright verified admin login → Security Demo tab → SQL Injection & Brute Force triggers produce inline dual verdicts (RULE + ML with predicted class, confidence, anomaly, threshold), and Attack Feed shows both rule and ML rows for the same simulated IP (68 RULE + 32 ML badges visible).",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {
+        "endpoint": "/api/admin/demo/attack (ml_verdict.anomaly_threshold)",
+        "issue": "ml_verdict returns anomaly_threshold rounded to 4 decimals (-0.0525) instead of full-precision -0.05246478086634679 requested by spec. Cause: /app/backend/ml/ids_inference.py line 90 does `round(_ANOMALY_THRESHOLD, 4)`. Underlying model_card.json holds correct full-precision value; only the API/UI display is rounded. Cosmetic. Fix: remove or widen the round() call if full precision is required in ml_verdict payload."
+      }
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_ids_ml_and_demo.py",
+    "/app/backend/tests/backend_test.py",
+    "/app/backend/tests/conftest.py",
+    "/app/test_reports/pytest/pytest_iter2.xml"
+  ],
+  "action_items": [
+    "OPTIONAL: If spec strictly requires full-precision anomaly_threshold in ml_verdict, drop the `round(_ANOMALY_THRESHOLD, 4)` in /app/backend/ml/ids_inference.py:90 (frontend displays it via .toFixed(3) so precision loss is only in the raw API JSON)."
+  ],
+  "critical_code_review_comments": [
+    "server.py now 807 lines — crossing the 700-line threshold; consider splitting admin routes into a separate module.",
+    "sklearn 1.8→1.9 unpickle warnings are cosmetic (documented in review request) — safe to ignore for now but plan a re-pickle in current sklearn version to eliminate warnings and future breakage.",
+    "admin_demo_attack correctly excludes _id (calls .pop('_id', None) on both logs) — good.",
+    "Middleware skip_ml for authenticated admins on /api/admin/* prevents dashboard-polling noise — correct decision.",
+    "ML scorer wrapped in try/except and only warns — good defensive coding so a ML failure never blocks the demo endpoint."
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_ids_ml_and_demo.py (new)"
+  ],
+  "success_rate": {"backend": "100% (12/12 new tests + previous 21/21 unchanged)", "frontend": "100% of tested SecurityDemo flows"},
+  "test_credentials": "Admin admin@securelend.io / Admin@1234 (from /app/memory/test_credentials.md)",
+  "seed_data_creation": "None. Test-created attack_logs entries share ephemeral simulated IPs and are cleaned by demo helper; blocked_ips test cleans its own inserted IP.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Threshold now correctly loaded from model_card.json (verified value -0.05246478086634679). ml_verdict fields returned in API response are all rounded to 4 decimals by ids_inference.py — tests use pytest.approx(abs=1e-4) for the threshold comparison. Predicted labels for each demo kind matched exactly (sql_injection→sql_injection, brute_force→brute_force_login, bot_flood→bot_flood, unauthorized_admin→unauthorized_admin, malicious_upload→malicious_upload, xss→xss_attempt). Frontend inline verdict renders correctly with data-testids ad-demo-verdicts-{kind}, ad-demo-ml-action-{kind}, ad-demo-ml-predicted-{kind}, ad-demo-ml-conf-{kind}, ad-demo-ml-anom-{kind}. Attack Feed SourceBadge renders both RULE and ML consistently.",
+  "rca of the issue": "No functional bugs. Minor cosmetic: ml_verdict.anomaly_threshold in API response is rounded to 4 decimals because /app/backend/ml/ids_inference.py line 90 calls round(_ANOMALY_THRESHOLD, 4). The full-precision value is still loaded from model_card.json (line 53) and used for the actual anomaly comparison — this is display-only rounding."
+}

@@ -1,0 +1,124 @@
+{
+  "theme_strategy": "Dual-Identity App (Organic Light Theme for User Portal, Tactical Dark Theme for Admin SOC)",
+  "typography": {
+    "user_portal": {
+      "headings": {
+        "family": "Playfair Display, serif",
+        "usage": "H1/H2 for Hero and Section headings. Use tracking-tight."
+      },
+      "body": {
+        "family": "Manrope, sans-serif",
+        "usage": "Highly legible geometric sans for form labels, descriptions, and buttons."
+      }
+    },
+    "admin_dashboard": {
+      "headings": {
+        "family": "JetBrains Mono, monospace",
+        "usage": "Use for metric numbers, alert titles, and grid headers. Uppercase, wide spacing."
+      },
+      "body": {
+        "family": "IBM Plex Sans, sans-serif",
+        "usage": "Dense data readability for tables and logs."
+      }
+    }
+  },
+  "colors": {
+    "user_portal": {
+      "archetype": "Organic & Earthy",
+      "background": "#F9F9F6",
+      "surface": "#FFFFFF",
+      "primary_brand": "#1A3626",
+      "secondary": "#4A6B53",
+      "accent": "#CC5A37",
+      "text_main": "#122217",
+      "text_muted": "#4A5D50",
+      "border": "#E2E4DC"
+    },
+    "admin_dashboard": {
+      "archetype": "The Performance Pro / Tactical SOC",
+      "background": "#050814",
+      "surface": "#0D111D",
+      "primary_info": "#0A84FF",
+      "success": "#30D158",
+      "warning": "#FF9F0A",
+      "critical": "#FF453A",
+      "text_main": "#F8FAFC",
+      "text_muted": "#94A3B8",
+      "border": "#1E293B"
+    }
+  },
+  "visual_enhancers": {
+    "user_portal": [
+      "Glassmorphism for floating headers (backdrop-blur-xl, bg-white/70, border-white/20).",
+      "Neumorphism for AI decision cards with soft ambient shadow (shadow-[0_8px_32px_rgba(0,0,0,0.06)]).",
+      "Subtle noise/grain overlay for a premium, non-digital feel."
+    ],
+    "admin_dashboard": [
+      "Grid Borders: border-collapse layout exposing the grid skeleton (border-border/40).",
+      "The Tracing Beam: moving glowing borders on critical active threat panels.",
+      "Terminal Scanlines: overlay for the live attack feed."
+    ]
+  },
+  "layouts": {
+    "user_portal": "Generous spacing (p-8 to p-16). Mobile-first, single-column stepper flows for KYC. Optical alignment.",
+    "admin_dashboard": "The Bento Grid Protocol (High Density). grid-cols-1 md:grid-cols-4. gap-4. 100% space utilized, sharp edges, no rounded corners greater than sm."
+  },
+  "motion": {
+    "user_portal": "Framer Motion for soft organic entrances (y: 20, opacity: 0). Smooth crossfades for bank linking.",
+    "admin_dashboard": "Micro-interactions, sharp blinks, and pulse effects for live attacks. Typewriter effect for incoming terminal logs."
+  },
+  "accessibility": {
+    "contrast": "APCA standard. Minimum 4.5:1 ratio for normal text.",
+    "interactive_states": "Hover states must explicitly change background and text colors. Focus rings must have higher contrast.",
+    "testing": "All interactive elements MUST include data-testid attribute."
+  },
+  "media": {
+    "image_strategy": "User portal uses warm, natural photography for trust. Admin portal relies solely on UI elements, charts, and technical backgrounds."
+  },
+  "3d_libraries": {
+    "recommendation": "Use Recharts for SOC Dashboard analytics (attack types over time). React Spring Parallax for User Portal landing page storytelling if needed."
+  },
+  "image_urls": [
+    {
+      "url": "https://images.pexels.com/photos/10958528/pexels-photo-10958528.jpeg",
+      "category": "User Portal - Bank Link",
+      "description": "Modern glass bank architecture for the background of the bank integration screen."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1467007849282-42dad96c2312",
+      "category": "User Portal - KYC/Onboarding",
+      "description": "Person using a mobile phone, emphasizing a seamless mobile-first onboarding."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1561233835-f937539b95b9",
+      "category": "Admin Dashboard - Abstract Technical",
+      "description": "Server/Data abstraction to be used as a low-opacity background or hero image for admin login."
+    }
+  ],
+  "component_path": "/app/frontend/src/components/ui/",
+  "instructions_to_main_agent": [
+    "CRITICAL: The codebase uses .js/.jsx, NOT TypeScript. Do not generate .tsx files. Strip types from Shadcn components if installing manually.",
+    "Create two entirely separate visual contexts (e.g. wrapping themes) for User Portal (Organic & Earthy) and Admin SOC Dashboard (Tactical/Dark).",
+    "For User Portal, focus on an intent-based, progressive data input flow for KYC and Loan Application. Make it feel highly trustworthy.",
+    "For Admin SOC Dashboard, build a command-center interface. Integrate Recharts for attack stats. Include a Security Demo panel that triggers realistic mock attacks (SQLi, Brute Force, etc.) updating the live feed.",
+    "Mock all backend integration realistically (Bank connection consent, AI scoring delays).",
+    "Never use Space Grotesk or default Vercel-look. Enforce the chosen typography."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do not apply universal transition (`transition: all`). Target explicit properties.",
+    "Do not center align the app container (`.App { text-align: center; }` is forbidden).",
+    "Never use generic AI emojis. Use lucide-react or phosphor-icons.",
+    "Never use completely transparent backgrounds over images/content. Always use solid or blurred backdrops.",
+    "Ensure layered depth with proper z-index and shadow combinations.",
+    "Include data-testid attributes on ALL interactive elements.",
+    "Use `sonner` for toast notifications.",
+    "Avoid the 'AI slop' aesthetic. Create crisp, opinionated designs based on the provided archetypes."
+  ],
+  "GENERAL UI UX DESIGN GUIDELINES": [
+    "Mobile-first responsive design is mandatory.",
+    "Prioritize optical alignment over geometrical alignment.",
+    "Maintain a clear visual hierarchy using size, weight, and distinct colors.",
+    "Incorporate meaningful micro-animations for all user interactions.",
+    "Ensure accessible color contrast for all text elements (APCA/WCAG standards)."
+  ]
+}

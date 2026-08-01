@@ -1,0 +1,47 @@
+{
+  "summary": "First-iteration end-to-end review of SecureLend (NBFC + Hybrid IDS). Backend: 21/21 pytest tests pass covering health, admin+user auth, /auth/me, SQLi block, unauthorized admin (403), brute-force lockout (429 + IP block + unblock), OTP send/verify, registration (invalid PAN rejected 422), bank consent gating, loan apply with 5 explainable factors, admin stats/attacks/blocked-ips/users/loans, demo attack simulator for all 6 kinds, admin loan override. Frontend: Landing, admin dashboard (stats + 6 tabs + 6 demo cards + attack trigger toast), user dashboard, bank connect + consent modal, loan apply with explainable factor breakdown — all working.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "/api/loans/apply", "issue": "Response omits `decision` key (only `loan_status` is returned). Frontend LoanApply.jsx line 152 checks `result.decision !== 'Approved'` — always true → 'suggested amount' hint is shown even for Approved loans. Either add `decision` to loan_doc or change frontend to check `loan_status`."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "LoanApply.ResultCard", "issue": "Suggested-amount hint appears even when status=Approved (see backend minor issue above). Change condition to `result.loan_status !== 'Approved'`.", "selector": "la-result", "priority": "LOW"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "AdminDashboard", "issues": ["Recharts logs 'width(-1) and height(-1)' warnings while tab is hidden — cosmetic console noise only; charts render fine when Overview tab is active."]}
+    ]
+  },
+  "test_report_links": [
+    "/app/backend/tests/backend_test.py",
+    "/app/backend/tests/conftest.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [
+    "OPTIONAL: In backend server.py `loans_apply`, add `\"decision\": result[\"decision\"]` to loan_doc so the frontend's suggested-amount hint condition works. Alternatively, change LoanApply.jsx line 152 to use `loan_status`.",
+    "OPTIONAL: In Overview tab, wrap Recharts containers so they only mount when tab active (removes -1/-1 warnings)."
+  ],
+  "critical_code_review_comments": [
+    "IDS middleware buffers full request body in memory — fine for JSON but risks large multipart uploads; upload path currently only used by KYC endpoint (5MB cap) so acceptable.",
+    "JWT_SECRET is checked-in (backend/.env). Fine for demo but flag for prod deployment.",
+    "auth.py extracts token from cookie OR Authorization header (correct); `_set_cookies` uses secure=True + samesite=none which is required for cross-origin preview deployment (works over HTTPS).",
+    "seed_admin correctly re-hashes password if env value changes (idempotent).",
+    "IsolationForest anomaly gated by `count < 15` — good, prevents false positives on cold start.",
+    "Bank connect deletes existing bank_verifications before inserting — expected but user tests can lose data if run concurrently; acceptable for demo.",
+    "server.py is 683 lines — near threshold, consider splitting admin & user routers into modules if further features are added."
+  ],
+  "updated_files": [
+    "/app/backend/tests/backend_test.py (new)",
+    "/app/backend/tests/conftest.py (new, xdist-resilient IP-unblock helper)"
+  ],
+  "success_rate": {"backend": "100% (21/21)", "frontend": "100% of tested flows"},
+  "test_credentials": "Admin admin@securelend.io / Admin@1234 · Demo user rahul.sharma@example.com / Demo@1234 (verified via /app/memory/test_credentials.md and backend .env)",
+  "seed_data_creation": "None manually created — relied on backend startup seed (admin + 10 demo users + 8 loans + 50 attack logs + 3 blocked IPs). Backend tests created ~1 additional TEST_ user during registration test (cleanup not implemented for that single doc; acceptable).",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Backend tests run in parallel via pytest-xdist (loadscope, 2 workers per pytest.ini). The brute-force test blocks the shared egress IP, which cascades to other tests on the second worker. conftest.py mitigates this by auto-unblocking all IPs before each test AND transparently retrying any requests-library call that hits a 403 'IP is temporarily blocked'. Do NOT remove this helper. If a later test times out unexpectedly, run `python -c 'from pymongo import MongoClient; import os; from datetime import datetime, timezone; MongoClient(os.environ[\"MONGO_URL\"])[os.environ[\"DB_NAME\"]].blocked_ips.update_many({\"unblocked_at\": None}, {\"$set\": {\"unblocked_at\": datetime.now(timezone.utc).isoformat()}})'` first to clear blocked IPs.",
+  "rca of the issue": "No blocking bugs. Only cosmetic mismatch: backend returns `loan_status` but not `decision`; frontend LoanApply uses `result.decision` which is undefined, causing a benign 'suggested amount' hint to appear on Approved loans. Fix in either place (see action_items)."
+}

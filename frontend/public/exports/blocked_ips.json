@@ -1,0 +1,287 @@
+[{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98297"
+	},
+	"id": "58a82a5f-dc4d-4ea7-896f-f2019b042334",
+	"ip_address": "25.103.21.31",
+	"reason": "Brute Force Login",
+	"blocked_at": "2026-07-20T18:54:28.003574+00:00",
+	"expires_at": 1.784642968003574E+09,
+	"unblocked_at": "2026-07-21T14:06:35.651713+00:00"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98298"
+	},
+	"id": "1bd47986-bc47-4027-a969-cbc7ce73176b",
+	"ip_address": "137.116.81.66",
+	"reason": "SQL Injection",
+	"blocked_at": "2026-07-20T23:54:28.003574+00:00",
+	"expires_at": 1.784642968003574E+09,
+	"unblocked_at": "2026-07-21T14:06:35.651713+00:00"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98299"
+	},
+	"id": "8eabd3f9-1fab-4d69-8031-00bd63d8d03e",
+	"ip_address": "92.8.88.19",
+	"reason": "Bot Flood",
+	"blocked_at": "2026-07-20T21:54:28.003574+00:00",
+	"expires_at": 1.784642968003574E+09,
+	"unblocked_at": "2026-07-21T14:06:35.651713+00:00"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3f7b844200d8e60ec"
+	},
+	"ip_address": "171.30.152.110",
+	"unblocked_at": "2026-07-21T14:06:35.651713+00:00",
+	"blocked_at": "2026-07-21T14:06:11.247599+00:00",
+	"expires_at": 1.784643671247599E+09,
+	"id": "816eb40f-c0a6-4f3c-af7e-f549be099c23",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3f7b844200d8e60f2"
+	},
+	"ip_address": "188.94.200.140",
+	"unblocked_at": "2026-07-21T14:06:35.651713+00:00",
+	"blocked_at": "2026-07-21T14:06:11.301226+00:00",
+	"expires_at": 1.784643671301226E+09,
+	"id": "6ee256da-68cf-4b3d-b764-845829a7d904",
+	"reason": "Bot Flood"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4f7b844200d8e613e"
+	},
+	"ip_address": "104.198.214.223",
+	"unblocked_at": "2026-07-21T14:06:35.651713+00:00",
+	"blocked_at": "2026-07-21T14:06:12.623572+00:00",
+	"expires_at": 1.784643672623572E+09,
+	"id": "94c6d201-e51e-485e-add4-a5e6b2c26ca2",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2f7b844200d8e61b5"
+	},
+	"unblocked_at": "2026-07-21T14:07:42.478263+00:00",
+	"ip_address": "76.48.135.164",
+	"blocked_at": "2026-07-21T14:06:42.035538+00:00",
+	"expires_at": 1.784643702035538E+09,
+	"id": "71724838-b9a3-4536-aa53-531f0f456342",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2f7b844200d8e61bd"
+	},
+	"unblocked_at": "2026-07-21T14:07:42.478263+00:00",
+	"ip_address": "74.12.210.208",
+	"blocked_at": "2026-07-21T14:06:42.099709+00:00",
+	"expires_at": 1.784643702099709E+09,
+	"id": "dcbf9bc4-16e1-43f4-9c7a-7a88288798fc",
+	"reason": "Bot Flood"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3f7b844200d8e6206"
+	},
+	"ip_address": "104.198.214.223",
+	"unblocked_at": "2026-07-21T14:07:42.478263+00:00",
+	"blocked_at": "2026-07-21T14:06:43.027904+00:00",
+	"expires_at": 1.784643703027904E+09,
+	"id": "b01cc343-c4b1-447e-946a-fa064455511e",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d2ff7b844200d8e6269"
+	},
+	"ip_address": "183.180.31.89",
+	"unblocked_at": "2026-07-21T14:07:43.863654+00:00",
+	"blocked_at": "2026-07-21T14:07:43.842532+00:00",
+	"expires_at": 1.784643763842532E+09,
+	"id": "1238ad88-2882-4d39-a9bf-67683e36b851",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d2ff7b844200d8e6270"
+	},
+	"ip_address": "147.190.98.50",
+	"unblocked_at": "2026-07-21T14:07:43.962121+00:00",
+	"blocked_at": "2026-07-21T14:07:43.887126+00:00",
+	"expires_at": 1.784643763887126E+09,
+	"id": "9d15fd2f-a31b-4086-9e69-1911c980ff63",
+	"reason": "Bot Flood"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d31f7b844200d8e62c1"
+	},
+	"ip_address": "104.198.214.223",
+	"unblocked_at": "2026-07-21T14:07:45.227034+00:00",
+	"blocked_at": "2026-07-21T14:07:45.185892+00:00",
+	"expires_at": 1.784643765185892E+09,
+	"id": "8178b3a9-4210-4723-9fcd-e6e19f018984",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a5f8434f7b844200d8e6a88"
+	},
+	"ip_address": "76.209.151.220",
+	"unblocked_at": "2026-07-22T19:34:28.678366+00:00",
+	"blocked_at": "2026-07-21T14:37:40.641749+00:00",
+	"expires_at": 1.784645560641749E+09,
+	"id": "984d3cea-21ce-46fe-8d75-cf22767eefff",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a5f843df7b844200d8e6abe"
+	},
+	"ip_address": "183.21.128.213",
+	"unblocked_at": "2026-07-22T19:34:28.678366+00:00",
+	"blocked_at": "2026-07-21T14:37:49.881826+00:00",
+	"expires_at": 1.784645569881826E+09,
+	"id": "e68cb880-16ec-4168-a60d-f98cec0be284",
+	"reason": "Bot Flood"
+},
+{
+	"_id": {
+		"$oid": "6a611b46f69ca16fb90537ff"
+	},
+	"unblocked_at": "2026-07-22T19:34:30.672949+00:00",
+	"ip_address": "121.236.138.170",
+	"blocked_at": "2026-07-22T19:34:30.649022+00:00",
+	"expires_at": 1.784749770649022E+09,
+	"id": "633d6acb-aed8-4920-ad2a-9b67375b0d52",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a611b46f69ca16fb9053806"
+	},
+	"unblocked_at": "2026-07-22T19:34:30.765649+00:00",
+	"ip_address": "121.77.224.94",
+	"blocked_at": "2026-07-22T19:34:30.743497+00:00",
+	"expires_at": 1.784749770743497E+09,
+	"id": "db21fa52-e71b-40ad-963a-518c01584c78",
+	"reason": "Bot Flood"
+},
+{
+	"_id": {
+		"$oid": "6a611b47f69ca16fb905381c"
+	},
+	"ip_address": "58.214.166.252",
+	"unblocked_at": "cleanup",
+	"blocked_at": "2026-07-22T19:34:31.095438+00:00",
+	"expires_at": 1.784749771095438E+09,
+	"id": "800bfc4e-3508-4c24-88a6-8c09c62beb75",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a611b63f69ca16fb9053856"
+	},
+	"unblocked_at": "2026-07-22T19:35:00.314060+00:00",
+	"ip_address": "177.69.86.46",
+	"blocked_at": "2026-07-22T19:34:59.984809+00:00",
+	"expires_at": 1.784749799984809E+09,
+	"id": "4f6f0e23-7569-43b3-b27c-56b98bbec7cb",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a611b64f69ca16fb905385e"
+	},
+	"unblocked_at": "2026-07-22T19:35:00.730759+00:00",
+	"ip_address": "178.144.124.155",
+	"blocked_at": "2026-07-22T19:35:00.398859+00:00",
+	"expires_at": 1.784749800398859E+09,
+	"id": "e81f0448-c684-4d70-9819-2d263de0e360",
+	"reason": "Bot Flood"
+},
+{
+	"_id": {
+		"$oid": "6a611b66f69ca16fb9053878"
+	},
+	"unblocked_at": "cleanup",
+	"ip_address": "171.219.79.105",
+	"blocked_at": "2026-07-22T19:35:02.026030+00:00",
+	"expires_at": 1.78474980202603E+09,
+	"id": "279aad71-f640-4f60-8b1b-da57c7b872f3",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a611b70f69ca16fb905389c"
+	},
+	"unblocked_at": "2026-07-22T19:35:12.639910+00:00",
+	"ip_address": "46.118.248.75",
+	"blocked_at": "2026-07-22T19:35:12.315855+00:00",
+	"expires_at": 1.784749812315855E+09,
+	"id": "2ff2b1ab-56fe-441b-a06f-5272551b4cab",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a611b70f69ca16fb90538a4"
+	},
+	"ip_address": "167.166.191.144",
+	"unblocked_at": "2026-07-22T19:35:13.050428+00:00",
+	"blocked_at": "2026-07-22T19:35:12.728344+00:00",
+	"expires_at": 1.784749812728344E+09,
+	"id": "6ca4c0ae-bb54-4e50-ba60-4a07cc6ef7d0",
+	"reason": "Bot Flood"
+},
+{
+	"_id": {
+		"$oid": "6a611b72f69ca16fb90538be"
+	},
+	"unblocked_at": "cleanup",
+	"ip_address": "170.237.135.97",
+	"blocked_at": "2026-07-22T19:35:14.318747+00:00",
+	"expires_at": 1.784749814318747E+09,
+	"id": "eb4d63c0-c7a3-4dc6-9096-d4308d938d2b",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a611b90f69ca16fb905391c"
+	},
+	"ip_address": "81.75.60.39",
+	"unblocked_at": null,
+	"blocked_at": "2026-07-22T19:35:44.132582+00:00",
+	"expires_at": 1.784749844132582E+09,
+	"id": "a76a5c36-64b2-4386-9154-c7a2724350ae",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a611dc3f69ca16fb9053d56"
+	},
+	"ip_address": "162.93.172.250",
+	"unblocked_at": null,
+	"blocked_at": "2026-07-22T19:45:07.388375+00:00",
+	"expires_at": 1.784750407388375E+09,
+	"id": "9dc9488a-8d27-4a9e-a07a-a64964a5c4bc",
+	"reason": "Brute Force Login"
+},
+{
+	"_id": {
+		"$oid": "6a611dc4f69ca16fb9053d76"
+	},
+	"ip_address": "119.51.1.133",
+	"unblocked_at": null,
+	"blocked_at": "2026-07-22T19:45:08.740464+00:00",
+	"expires_at": 1.784750408740464E+09,
+	"id": "000c7c0b-eb4b-4f3b-bd87-b944cffcdf2c",
+	"reason": "Bot Flood"
+}]
+

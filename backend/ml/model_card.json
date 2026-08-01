@@ -1,0 +1,29 @@
+{
+  "features_in_order": [
+    "requests_per_minute",
+    "failed_logins_5min",
+    "contains_sql_keywords",
+    "contains_script_tag",
+    "endpoint_sensitivity",
+    "role_mismatch",
+    "file_ext_risk",
+    "payload_size_kb",
+    "unique_endpoints_1min",
+    "hour_of_day"
+  ],
+  "classes_in_order": [
+    "anomalous_traffic",
+    "bot_flood",
+    "brute_force_login",
+    "malicious_upload",
+    "normal",
+    "sql_injection",
+    "unauthorized_admin",
+    "xss_attempt"
+  ],
+  "anomaly_threshold": -0.027230154177277092,
+  "training_rows": 25200,
+  "test_rows": 6300,
+  "attack_recall_at_threshold": 0.9628571428571429,
+  "false_positive_rate_at_threshold": 0.1
+}

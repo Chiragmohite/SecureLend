@@ -1,0 +1,6414 @@
+[{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98265"
+	},
+	"id": "4ea4563c-7c29-4646-935e-db72d6035da0",
+	"ip_address": "180.252.250.63",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-19T06:31:28.003574+00:00",
+	"status": "blocked",
+	"severity": "medium",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98266"
+	},
+	"id": "e497b98d-1be3-4c6d-bf55-871c53fc5b24",
+	"ip_address": "178.48.147.183",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-17T12:18:28.003574+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98267"
+	},
+	"id": "0ff76b69-3718-4cc2-96bd-93aaa27ce47c",
+	"ip_address": "68.177.6.100",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-18T06:39:28.003574+00:00",
+	"status": "blocked",
+	"severity": "medium",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98268"
+	},
+	"id": "a0671b7e-6661-4df9-b696-58922a45f3a7",
+	"ip_address": "203.58.129.12",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-18T18:13:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98269"
+	},
+	"id": "1d237654-abab-4672-bf3d-56b8452e0b2a",
+	"ip_address": "219.255.35.21",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-15T13:26:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9826a"
+	},
+	"id": "b09fa820-d3d2-4ac2-b7ae-bda5c7753857",
+	"ip_address": "10.134.177.215",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-18T12:41:28.003574+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9826b"
+	},
+	"id": "8ab31c43-6472-417a-ba3c-18744fa48844",
+	"ip_address": "54.161.200.138",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T02:41:28.003574+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9826c"
+	},
+	"id": "6fde9a1f-b571-41e5-8ae8-063a8655fd7f",
+	"ip_address": "198.43.93.250",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/kyc/pan",
+	"user_id": null,
+	"timestamp": "2026-07-18T21:26:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9826d"
+	},
+	"id": "7ec2f478-f18f-4850-ad8b-762235e7566b",
+	"ip_address": "164.87.185.31",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-19T21:29:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9826e"
+	},
+	"id": "b656b8a0-5602-49d9-b745-fca8735b609d",
+	"ip_address": "149.162.209.29",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-16T00:13:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9826f"
+	},
+	"id": "922eca8f-6808-4376-a778-c2292cb4d1cd",
+	"ip_address": "239.32.43.70",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-19T20:30:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98270"
+	},
+	"id": "74d0032a-df14-4d19-b80a-d9b5bf0e50a6",
+	"ip_address": "73.2.188.9",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-17T20:54:28.003574+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98271"
+	},
+	"id": "75628095-4d0b-49ed-9015-6684423345bb",
+	"ip_address": "223.217.71.10",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-15T11:24:28.003574+00:00",
+	"status": "blocked",
+	"severity": "medium",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98272"
+	},
+	"id": "eed36863-127b-4fad-88c8-626f880fcd3c",
+	"ip_address": "240.65.144.177",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-20T01:18:28.003574+00:00",
+	"status": "blocked",
+	"severity": "medium",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98273"
+	},
+	"id": "69dd6925-ded6-479d-9e90-581f82cdad77",
+	"ip_address": "74.248.211.73",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-18T07:02:28.003574+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98274"
+	},
+	"id": "b286eada-f7a9-430f-a4e3-a0143d953bc6",
+	"ip_address": "124.56.30.230",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-15T16:49:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98275"
+	},
+	"id": "16322ce5-35eb-46df-9c20-2e543d3226ee",
+	"ip_address": "40.189.174.104",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-17T03:59:28.003574+00:00",
+	"status": "blocked",
+	"severity": "medium",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98276"
+	},
+	"id": "52c10350-132b-42b8-92f5-d666efc9a2ac",
+	"ip_address": "200.11.67.125",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/kyc/pan",
+	"user_id": null,
+	"timestamp": "2026-07-18T19:57:28.003574+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98277"
+	},
+	"id": "4b20e244-c97d-4f19-8148-777bd57541d8",
+	"ip_address": "233.214.185.70",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/kyc/pan",
+	"user_id": null,
+	"timestamp": "2026-07-21T05:39:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98278"
+	},
+	"id": "d1936366-fd22-45bf-a232-98f8ec304c2a",
+	"ip_address": "17.85.211.113",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/kyc/pan",
+	"user_id": null,
+	"timestamp": "2026-07-17T05:32:28.003574+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98279"
+	},
+	"id": "d2b2ddf9-8c6b-48d0-a782-13aec1553cda",
+	"ip_address": "40.158.37.207",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-14T19:30:28.003574+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9827a"
+	},
+	"id": "67f765f8-786b-44f9-ac90-db1a0825a7d2",
+	"ip_address": "159.32.205.154",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/kyc/pan",
+	"user_id": null,
+	"timestamp": "2026-07-17T17:08:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9827b"
+	},
+	"id": "3b9a375c-f487-409b-b2f2-a404e3656a80",
+	"ip_address": "67.240.253.49",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/kyc/pan",
+	"user_id": null,
+	"timestamp": "2026-07-21T03:23:28.003574+00:00",
+	"status": "blocked",
+	"severity": "medium",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9827c"
+	},
+	"id": "9263b4a4-5569-4bdb-bf01-20cf4c24b3f4",
+	"ip_address": "182.135.223.109",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/kyc/pan",
+	"user_id": null,
+	"timestamp": "2026-07-17T15:48:28.003574+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9827d"
+	},
+	"id": "fcc8c437-a3ef-4e0d-b36e-44528e1ea154",
+	"ip_address": "23.120.46.124",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-18T00:17:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9827e"
+	},
+	"id": "2507f555-7a13-4c79-a4e7-23c9072f1dfa",
+	"ip_address": "140.24.87.98",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-19T13:10:28.003574+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9827f"
+	},
+	"id": "d042b7ac-4a64-4fd7-ad12-54c6fa077d94",
+	"ip_address": "98.209.158.81",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-15T11:23:28.003574+00:00",
+	"status": "blocked",
+	"severity": "medium",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98280"
+	},
+	"id": "37f406c4-21e2-4e19-82d2-8db1c3feba72",
+	"ip_address": "150.162.207.180",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-14T20:48:28.003574+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98281"
+	},
+	"id": "46ef96dc-962f-414c-a039-4bf3d1641ada",
+	"ip_address": "127.173.67.57",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T01:55:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98282"
+	},
+	"id": "683b5862-10c2-4842-958c-0756bf0d4d96",
+	"ip_address": "34.76.192.236",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/kyc/pan",
+	"user_id": null,
+	"timestamp": "2026-07-16T00:05:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98283"
+	},
+	"id": "d35f0195-23a1-4c5a-b5e5-6958353dbe8a",
+	"ip_address": "206.143.88.231",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-18T05:33:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98284"
+	},
+	"id": "cb74f6da-7812-47e3-b929-8f763bf7e904",
+	"ip_address": "55.83.118.246",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T09:04:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98285"
+	},
+	"id": "7ed83f48-9edd-4249-860d-852b452e3a42",
+	"ip_address": "164.194.206.192",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-16T20:00:28.003574+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98286"
+	},
+	"id": "b51c551b-5383-4ca5-a5c2-f0ec6a1128c5",
+	"ip_address": "147.153.129.159",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-15T15:14:28.003574+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98287"
+	},
+	"id": "3b5b7af0-806f-48f3-9bb6-631c567021e7",
+	"ip_address": "115.135.118.9",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-16T09:34:28.003574+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98288"
+	},
+	"id": "34267a1a-f2a6-48a1-b17d-07b3026ebc05",
+	"ip_address": "43.133.184.28",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-18T20:54:28.003574+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98289"
+	},
+	"id": "9789ef61-2a9d-471a-81fa-4cb82de4b4de",
+	"ip_address": "96.66.121.37",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-17T03:21:28.003574+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9828a"
+	},
+	"id": "adf28182-d589-47a9-b03c-cb70f296a5c2",
+	"ip_address": "170.56.171.215",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/kyc/pan",
+	"user_id": null,
+	"timestamp": "2026-07-20T22:28:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9828b"
+	},
+	"id": "180c4b33-da47-4303-b723-55bfd1e855e8",
+	"ip_address": "170.107.75.28",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/kyc/pan",
+	"user_id": null,
+	"timestamp": "2026-07-18T20:08:28.003574+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9828c"
+	},
+	"id": "fd9f129b-3513-4b3c-8520-8b8e40f1db7f",
+	"ip_address": "97.194.57.100",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-19T13:45:28.003574+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9828d"
+	},
+	"id": "d7e047a1-7d4f-4f36-bfb0-a6f35937c320",
+	"ip_address": "12.173.11.111",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-15T10:14:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9828e"
+	},
+	"id": "0cc07ff8-dc8b-4a44-a3d3-b28f2d026f7e",
+	"ip_address": "197.116.154.121",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-20T02:40:28.003574+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c9828f"
+	},
+	"id": "808f40a6-9b00-4931-a845-97d0bce8ffcf",
+	"ip_address": "69.153.224.57",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-16T22:13:28.003574+00:00",
+	"status": "blocked",
+	"severity": "medium",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98290"
+	},
+	"id": "2da88439-ffca-4ec8-9b9e-648c7921175d",
+	"ip_address": "187.13.136.230",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-17T13:59:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98291"
+	},
+	"id": "af8936f2-1e77-4d55-8901-71612b88b9c0",
+	"ip_address": "67.8.150.154",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-19T01:57:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98292"
+	},
+	"id": "d122eb6f-d6b6-451b-9e12-d04296a52dc4",
+	"ip_address": "110.244.49.208",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-16T02:14:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98293"
+	},
+	"id": "bcc01af0-3000-4845-b9bd-a869f78dbf0c",
+	"ip_address": "156.174.71.27",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-15T09:28:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98294"
+	},
+	"id": "de3c091a-8fbb-4651-bc54-53ce5c8c64d5",
+	"ip_address": "119.68.55.140",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-15T12:17:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98295"
+	},
+	"id": "479eebe0-876e-4e7e-adf7-96fed3e6a421",
+	"ip_address": "78.97.29.130",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-19T01:15:28.003574+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Detected via rule engine"
+},
+{
+	"_id": {
+		"$oid": "6a5f7a14656f510d27c98296"
+	},
+	"id": "a18e19b7-852d-4eb9-b676-7d3f3015b61e",
+	"ip_address": "132.114.92.188",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-16T14:02:28.003574+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "Detected via anomaly detector"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ba6ba70be6f3302e616"
+	},
+	"id": "cc4bd7f2-3f90-4516-8c2f-16afc3eb7c40",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:01:10.807700+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.627 features={'rpm': 3, 'unique_endpoints': 2, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7bc209f2fca095940cda"
+	},
+	"id": "fb737551-d5ab-41b7-8057-b1a82c716fe1",
+	"ip_address": "104.198.214.223",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:01:38.182912+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Pattern matched: (\\bor\\b|\\band\\b)\\s+['\\\"]?1['\\\"]?\\s*=\\s*['\\\"]?1"
+},
+{
+	"_id": {
+		"$oid": "6a5f7bff406ef73585f262e7"
+	},
+	"id": "d73b0f50-9951-44dd-a56f-258122ed3a3e",
+	"ip_address": "34.170.12.145",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:02:39.286492+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Pattern matched: (\\bor\\b|\\band\\b)\\s+['\\\"]?1['\\\"]?\\s*=\\s*['\\\"]?1"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c08406ef73585f262e8"
+	},
+	"id": "9c34a903-5313-4d37-920f-5cc576a6e13a",
+	"ip_address": "34.170.12.145",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:02:48.898474+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.656 features={'rpm': 4, 'unique_endpoints': 1, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c09406ef73585f262e9"
+	},
+	"id": "860873ad-d5f1-4600-b584-dcf113edbf17",
+	"ip_address": "34.170.12.145",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:02:49.279134+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.624 features={'rpm': 5, 'unique_endpoints': 2, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c09406ef73585f262ea"
+	},
+	"id": "1c6d4cc8-3060-415e-b32d-4b9e49325ebb",
+	"ip_address": "34.170.12.145",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:02:49.399132+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.613 features={'rpm': 6, 'unique_endpoints': 3, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c09406ef73585f262eb"
+	},
+	"id": "cd0078f7-7034-4971-8b60-a6741df86601",
+	"ip_address": "34.170.12.145",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:02:49.399708+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Role=anonymous"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c09406ef73585f262ec"
+	},
+	"id": "01800037-4da0-4e7e-9eb3-df3c64a195d1",
+	"ip_address": "34.170.12.145",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/demo/attack",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:02:49.549856+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.635 features={'rpm': 7, 'unique_endpoints': 4, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c09406ef73585f262ed"
+	},
+	"id": "aae68ae5-0a56-4510-8cb0-d5265a957946",
+	"ip_address": "155.44.104.132",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:02:49.551513+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Payload: ' OR '1'='1' --"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c24406ef73585f262ee"
+	},
+	"id": "b311c9de-c97e-48f7-b532-d814d01e07eb",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:03:16.147468+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.606 features={'rpm': 4, 'unique_endpoints': 4, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c24406ef73585f262ef"
+	},
+	"id": "724da3ec-1a72-4231-b656-dba0fe2e1d4e",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:03:16.151506+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.606 features={'rpm': 4, 'unique_endpoints': 4, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c24406ef73585f262f0"
+	},
+	"id": "5912b92a-51c7-4e93-98db-5769a722f037",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:03:16.160000+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.670 features={'rpm': 6, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c24406ef73585f262f1"
+	},
+	"id": "c589850c-7795-4db5-a88b-410a4034483d",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:03:16.163950+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.670 features={'rpm': 6, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c24406ef73585f262f2"
+	},
+	"id": "0387e61d-267f-4345-89fe-5a8f64826f80",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:03:16.245388+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.707 features={'rpm': 7, 'unique_endpoints': 6, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c24406ef73585f262f3"
+	},
+	"id": "586e8726-fa04-4467-b8b9-626fa8eccb14",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:03:16.252805+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.724 features={'rpm': 8, 'unique_endpoints': 6, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c24406ef73585f262f4"
+	},
+	"id": "d6590ddd-d36d-4df1-bb44-f5c31ddbbde9",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:03:16.344824+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.735 features={'rpm': 9, 'unique_endpoints': 6, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c24406ef73585f262f5"
+	},
+	"id": "693253ab-67b8-4892-8f0a-5944ebadef12",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:03:16.352727+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 11, 'unique_endpoints': 6, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7c24406ef73585f262f6"
+	},
+	"id": "54fc07b0-7691-4a56-acc0-95ebd17178fe",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:03:16.357045+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 11, 'unique_endpoints': 6, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e9910"
+	},
+	"id": "559b5251-15f4-4199-918a-8d50c3f2f89c",
+	"ip_address": "127.179.89.93",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.183851+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Payload: ' OR '1'='1' --"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e9911"
+	},
+	"id": "442d7d67-67ad-4b3f-8b39-87356245bcd6",
+	"ip_address": "171.30.152.110",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.246907+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e9912"
+	},
+	"id": "51cbe4ee-debc-4882-88f9-f1fc9469ed85",
+	"ip_address": "188.94.200.140",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.300810+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "150+ req/min – rate limit breached"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e9913"
+	},
+	"id": "937ecba9-4124-40f7-85a2-d320c065ac48",
+	"ip_address": "125.245.240.203",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.356229+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Non-admin JWT attempted to hit /admin route"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e9914"
+	},
+	"id": "b39399a5-f59d-4ad7-a433-ea565a71ac51",
+	"ip_address": "191.216.157.53",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.408184+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Blocked file: kyc_document.exe (executable)"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e9915"
+	},
+	"id": "1e117609-da83-4e93-9a46-94b0c8b6b26f",
+	"ip_address": "52.65.175.46",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.462257+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Payload: <script>alert(1)</script>"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e9916"
+	},
+	"id": "5a539bd8-5b1f-4381-9045-f69d6cc052f4",
+	"ip_address": "104.198.214.223",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.466424+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Pattern matched: (\\bor\\b|\\band\\b)\\s+['\\\"]?1['\\\"]?\\s*=\\s*['\\\"]?1"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e9917"
+	},
+	"id": "f61b8482-dd40-4403-bcf8-100db7c91aae",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.653677+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Role=anonymous"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e9918"
+	},
+	"id": "06edc998-f7c1-4b24-a26b-4b47cd961fb1",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.676548+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 22, 'unique_endpoints': 9, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e9919"
+	},
+	"id": "eaab84b1-18d5-4650-a6a4-899814bc9ec6",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.923202+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 23, 'unique_endpoints': 9, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e991a"
+	},
+	"id": "e88a4f91-292e-4e85-b291-dd9f269f35c3",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.924646+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_d5c49d01@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd3ed88c2cec90e991b"
+	},
+	"id": "3da790e5-4faf-402b-9f75-a49883355e25",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:11.977945+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 24, 'unique_endpoints': 10, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e991c"
+	},
+	"id": "8baa2ccb-dec4-4b61-a9e8-371b44654fcc",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.033098+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 25, 'unique_endpoints': 10, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e991d"
+	},
+	"id": "90ac9d51-c900-4030-bab4-6f71cd86898a",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.034523+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_d5c49d01@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e991e"
+	},
+	"id": "15dddfa6-f2c5-4f05-9ed8-52f268bb3f93",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.039358+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 26, 'unique_endpoints': 10, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9920"
+	},
+	"id": "fd8ec0a9-18f7-4a94-937f-3f3ad5a55eae",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.095345+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 27, 'unique_endpoints': 10, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9921"
+	},
+	"id": "aead4afd-0945-45a3-b2e0-59da84ce183d",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/health",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.152107+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 28, 'unique_endpoints': 11, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9922"
+	},
+	"id": "eb1ae776-5796-4b0d-94f7-c17d4fd36155",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.157922+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 29, 'unique_endpoints': 11, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9923"
+	},
+	"id": "f213e0a7-e7ba-4a62-ad77-2ddb38d7bc2f",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.159011+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_d5c49d01@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9924"
+	},
+	"id": "b0b2e154-1aba-4173-a733-fe8e7ca28754",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/register",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.212565+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 30, 'unique_endpoints': 12, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9925"
+	},
+	"id": "c88682f0-f760-48e0-9041-884eb6ad85ac",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/register",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.269547+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 31, 'unique_endpoints': 12, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9927"
+	},
+	"id": "eeb7d34d-1b8d-468b-acc4-3952edc86451",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.503962+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 32, 'unique_endpoints': 12, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9928"
+	},
+	"id": "ce843c48-cd45-47a4-9d4a-3b375f310227",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.505117+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_d5c49d01@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9929"
+	},
+	"id": "51609be5-d7bf-4877-b5fe-79def7ca9543",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.555122+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 33, 'unique_endpoints': 12, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e992b"
+	},
+	"id": "d675e243-66b6-45d4-8a1f-194d4ae9436e",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.613620+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 34, 'unique_endpoints': 13, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e992d"
+	},
+	"id": "4043263a-c863-4413-b25b-d829b5384274",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.622545+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 35, 'unique_endpoints': 13, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e992e"
+	},
+	"id": "838f49a6-e05c-4bb0-a111-225a0ad18598",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.623996+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "5+ failures for bf_d5c49d01@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e992f"
+	},
+	"id": "b7a8e11d-e8b6-4272-9353-7f531b0f9ed4",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.712401+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9930"
+	},
+	"id": "eb28fee0-dfc1-44d9-9cf4-1721dcd724c3",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.766766+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9931"
+	},
+	"id": "01ce9d0a-555f-474b-9858-b9ee15555098",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/otp/send",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.817166+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd4ed88c2cec90e9932"
+	},
+	"id": "62c82486-a4e1-45f3-8e99-e2c6f8f0a9c8",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/otp/send",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:12.903441+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cd5ed88c2cec90e9933"
+	},
+	"id": "13c88242-1a9b-4dfb-9a60-ce0b0a3879b1",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:13.029881+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce1ed88c2cec90e9934"
+	},
+	"id": "c1f363d9-6ca8-45e9-85d4-acfea3746f08",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/health",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:25.736401+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce1ed88c2cec90e9935"
+	},
+	"id": "e98cab56-e20c-46b8-8e8b-c5560f625719",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:25.828116+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce1ed88c2cec90e9936"
+	},
+	"id": "8de50bfc-8bb9-4825-b8c2-456c4a001c89",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:25.905351+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce1ed88c2cec90e9937"
+	},
+	"id": "02f55e0c-8e90-4bf1-9a3d-4e1bdafbe778",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:25.977640+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce2ed88c2cec90e9938"
+	},
+	"id": "21fee2fc-2dfc-44a2-95e4-3ed7693a27ac",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:26.104241+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce2ed88c2cec90e9939"
+	},
+	"id": "72594d56-3e43-49c8-91c8-b9021ff20a4f",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:26.160210+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce2ed88c2cec90e993a"
+	},
+	"id": "4a1e3214-4677-43c4-8907-60e88719c1bb",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:26.282557+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce2ed88c2cec90e993b"
+	},
+	"id": "58849897-bf4d-4a5a-812e-d50e95c276c5",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:26.382575+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce2ed88c2cec90e993c"
+	},
+	"id": "4ab72d69-4a0d-414d-92b9-1579bc98aaf5",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:26.480325+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce2ed88c2cec90e993d"
+	},
+	"id": "bebc9c7c-5142-4dea-8e41-bb8ab5cfd2d7",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:26.602756+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce2ed88c2cec90e993e"
+	},
+	"id": "4a188454-5d85-4c8a-a37c-1de0c9afa45e",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:26.709930+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce2ed88c2cec90e993f"
+	},
+	"id": "e25905f5-5307-4b9c-9ec8-b0cb485606e1",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:26.835089+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce2ed88c2cec90e9940"
+	},
+	"id": "d8038e85-401b-429d-999e-6e82dc55abff",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:26.933059+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce3ed88c2cec90e9941"
+	},
+	"id": "f122c655-e2ed-4655-a9de-39a6045d4809",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:27.051022+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce3ed88c2cec90e9942"
+	},
+	"id": "38a770b5-c269-4391-9197-7f283b032b42",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:27.168404+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce3ed88c2cec90e9943"
+	},
+	"id": "9c52b477-c594-4ae9-ace8-593a03bdd42f",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/otp/send",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:27.245402+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce3ed88c2cec90e9944"
+	},
+	"id": "32adc904-9a06-4cab-b780-89a95e23dec8",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/otp/send",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:27.317881+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce3ed88c2cec90e9945"
+	},
+	"id": "66f51eae-4339-4140-8981-201754d13d80",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/register",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:27.392272+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce3ed88c2cec90e9946"
+	},
+	"id": "ffa3161b-88f7-4f28-9b01-c6453cb3ef54",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:27.484643+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7ce3ed88c2cec90e9947"
+	},
+	"id": "a7166882-5e02-4dc0-80ac-c473d290e8b2",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:27.622880+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf0ed88c2cec90e9948"
+	},
+	"id": "ad6a1106-2d91-4bdc-966f-e6b462293ef7",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:40.797984+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "61 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf0ed88c2cec90e9949"
+	},
+	"id": "3745d3b1-f9e8-41a3-a649-a1ebded724ea",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:40.802134+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 61, 'unique_endpoints': 14, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e994a"
+	},
+	"id": "cfefb8c4-e324-49ce-bc8c-cf4fd591feb6",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.026700+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "62 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e994b"
+	},
+	"id": "39f4775f-73bc-4e47-9bc1-6e7cabb19437",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.030820+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 62, 'unique_endpoints': 14, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e994c"
+	},
+	"id": "5ebc17c4-ac24-4e08-9b83-862deee8452d",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.268507+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "63 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e994d"
+	},
+	"id": "516adc82-c6db-4425-b0e0-035a8a46b596",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.272625+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 63, 'unique_endpoints': 14, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e994e"
+	},
+	"id": "a2ab86df-a415-43d0-9068-67defb1e72c7",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.501296+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "64 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e994f"
+	},
+	"id": "18a9b123-cdba-4931-b708-29f430007c11",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.560092+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "66 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e9950"
+	},
+	"id": "9235e644-7332-4aa5-9630-8c308ea01c48",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.560424+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "66 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e9951"
+	},
+	"id": "cf97e524-786a-40d5-9975-9d2c8744eb8c",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.564680+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 66, 'unique_endpoints': 14, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e9952"
+	},
+	"id": "af3723bd-501d-4f86-99e8-93c89bcd8726",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.848810+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "67 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e9953"
+	},
+	"id": "a577940e-991c-4728-b16b-97b22d3244c7",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.849958+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "68 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e9954"
+	},
+	"id": "26ee479b-b4fb-41ac-8b75-ca85c985388c",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.854426+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 68, 'unique_endpoints': 14, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e9955"
+	},
+	"id": "2dc9ece8-5a50-440e-a525-e71314d416d7",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.910335+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "69 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e9956"
+	},
+	"id": "cf667491-2c4a-4123-a6a4-5f423d1458dd",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.972505+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "70 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e9957"
+	},
+	"id": "6e559c33-48df-4e00-95b2-2a3c1fea3cba",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.976608+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 70, 'unique_endpoints': 14, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e9958"
+	},
+	"id": "5d5685b9-ed3b-42f6-90eb-cda07b00adf0",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/demo/attack",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.977733+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "71 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf1ed88c2cec90e9959"
+	},
+	"id": "26b147d1-b5fc-4546-a63d-75b15cc5fd41",
+	"ip_address": "147.239.212.188",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:41.978636+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Payload: ' OR '1'='1' --"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e995a"
+	},
+	"id": "6feee43f-2710-4fab-b199-45977babd99a",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/demo/attack",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.034026+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "72 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e995b"
+	},
+	"id": "e7501626-b179-4a74-b2e6-17f690837268",
+	"ip_address": "76.48.135.164",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.035212+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e995c"
+	},
+	"id": "ba9aa9f6-303e-4b42-ba7e-8aa94a05da0f",
+	"ip_address": "104.198.214.223",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.042120+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Pattern matched: (\\bor\\b|\\band\\b)\\s+['\\\"]?1['\\\"]?\\s*=\\s*['\\\"]?1"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e995d"
+	},
+	"id": "52f1b62c-f51a-436a-b5d5-af9005a2a0df",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/demo/attack",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.098278+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "74 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e995e"
+	},
+	"id": "d4c62011-fb6a-4a9e-9633-a1c3ffee77cb",
+	"ip_address": "74.12.210.208",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.099420+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "150+ req/min – rate limit breached"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e995f"
+	},
+	"id": "51e460ac-0486-43d5-a0c0-2061bc9dff70",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/demo/attack",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.153549+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9960"
+	},
+	"id": "f4624c8d-819b-45f6-9c1a-10c6b872a6eb",
+	"ip_address": "50.247.224.200",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.154646+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Non-admin JWT attempted to hit /admin route"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9961"
+	},
+	"id": "2bc4e1c4-eaff-4987-aabd-4aecb14b5572",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.185250+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9962"
+	},
+	"id": "0bbb8678-ae38-4713-9950-5c63f711d086",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.185698+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Role=anonymous"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9963"
+	},
+	"id": "59bbda85-5303-4baa-8202-03f0f57cf152",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/demo/attack",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.206236+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "77 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9964"
+	},
+	"id": "c3cf4d0d-d568-4321-97ed-0a185d524d7a",
+	"ip_address": "73.133.141.190",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.207184+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Blocked file: kyc_document.exe (executable)"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9965"
+	},
+	"id": "78b6ae73-7b1a-4c9b-9926-363b9a5f28a4",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/demo/attack",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.258924+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "78 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9966"
+	},
+	"id": "51af15ac-4927-4603-9eb0-38867dca1cc1",
+	"ip_address": "199.224.141.48",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.260016+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Payload: <script>alert(1)</script>"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9967"
+	},
+	"id": "e52221b0-929f-495b-a18d-a86d19a50174",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.296897+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "79 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9968"
+	},
+	"id": "370cb6ce-5953-49fb-94fa-fd62ebf7677f",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.300860+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 79, 'unique_endpoints': 14, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9969"
+	},
+	"id": "0e44549f-d0ee-4759-a04f-9e0f9e978df1",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.301916+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_3cf6bba6@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e996a"
+	},
+	"id": "8e3df171-e966-43fa-8d8b-6c0b8cdcf92f",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.317940+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "80 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e996b"
+	},
+	"id": "bcd57e66-7788-4943-89f3-252c361d7dc9",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans/6c478d32-0c83-426a-ada4-acb738e28b3e/override",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.376590+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "81 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e996c"
+	},
+	"id": "239059cd-77e6-4d17-905a-7462211b70c7",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.451405+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "82 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e996d"
+	},
+	"id": "a38261b3-0b75-4935-8e2b-506ca1924095",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.455506+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.687 features={'rpm': 82, 'unique_endpoints': 15, 'id_diversity': 2}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e996e"
+	},
+	"id": "2e70ec1a-0ed6-46bc-8c8f-5a458c52cf5a",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.456542+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_3cf6bba6@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e996f"
+	},
+	"id": "d09ad80a-7dee-4168-a2c4-7fc74b8ae8e6",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.498425+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "83 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9970"
+	},
+	"id": "6eee1c17-9efc-465e-b049-a8d868c5dad9",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.552634+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "84 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9971"
+	},
+	"id": "7f044769-9285-4a30-ae68-5128e58414f6",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.556758+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.687 features={'rpm': 84, 'unique_endpoints': 15, 'id_diversity': 2}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9972"
+	},
+	"id": "9ab086f0-5a39-42c8-ac83-86cbb14e5a70",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.557989+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "85 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9973"
+	},
+	"id": "2b038b53-bf47-4a6b-a3ff-b0132d9ec1a2",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.783758+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.687 features={'rpm': 85, 'unique_endpoints': 15, 'id_diversity': 2}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9974"
+	},
+	"id": "29d5e0f4-012f-4b10-9139-5389c6fca536",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.785353+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_3cf6bba6@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9975"
+	},
+	"id": "523d73fa-ca16-4368-8c2a-07b351c106aa",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.837817+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "86 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9976"
+	},
+	"id": "c742c6d1-d72d-4c61-b14c-adbc53f7f184",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.841701+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.687 features={'rpm': 86, 'unique_endpoints': 15, 'id_diversity': 2}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9977"
+	},
+	"id": "26ed24fe-ae4e-47cc-b855-d91082807f7c",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.894572+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "87 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e9978"
+	},
+	"id": "41d8d01a-eb67-49e4-a8d1-f9a938566409",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.898575+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.687 features={'rpm': 87, 'unique_endpoints': 15, 'id_diversity': 2}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e997a"
+	},
+	"id": "7e2453d2-e51f-4e62-b69a-e49fd3db46f2",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.924279+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "88 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e997b"
+	},
+	"id": "4c4cacff-902a-401e-b188-9162e2dbfd21",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.928042+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.687 features={'rpm': 88, 'unique_endpoints': 15, 'id_diversity': 2}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e997c"
+	},
+	"id": "ed22b4d5-f39c-4187-9037-975273be8d92",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.928999+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_3cf6bba6@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e997d"
+	},
+	"id": "f2767013-cb3b-408e-8f33-160d19536ee6",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.954237+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "89 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf2ed88c2cec90e997e"
+	},
+	"id": "224f1cb0-5cbd-426d-94bf-13e2b2f4a7d4",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:42.958154+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.687 features={'rpm': 89, 'unique_endpoints': 15, 'id_diversity': 2}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e997f"
+	},
+	"id": "249c3d2a-db4a-48c6-8145-ca84435df356",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/health",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.015689+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "90 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e9980"
+	},
+	"id": "609ebe9a-cc7b-4708-aeff-99e6272607e0",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/health",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.019760+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.687 features={'rpm': 90, 'unique_endpoints': 15, 'id_diversity': 2}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e9981"
+	},
+	"id": "26f07d71-237c-4c04-abbf-7992d330345a",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.023256+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "91 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e9982"
+	},
+	"id": "9c41095b-1ab5-418e-a8e9-48ec2583e78d",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.026882+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.687 features={'rpm': 91, 'unique_endpoints': 15, 'id_diversity': 2}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e9983"
+	},
+	"id": "8f6aa537-fd5c-441e-8113-b158c9727f5e",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.028357+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "5+ failures for bf_3cf6bba6@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e9984"
+	},
+	"id": "46c7c97e-80b4-4673-9dac-53fc85d57c77",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/register",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.079766+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e9985"
+	},
+	"id": "2346c6cb-4597-4fa4-a05a-624a8e2b9b8f",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.192913+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e9986"
+	},
+	"id": "6d2f91f7-d14e-47e6-844b-9b6242f213bc",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.250725+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e9987"
+	},
+	"id": "b627ad91-df65-4331-8215-2cdd390f9455",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.262024+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e9988"
+	},
+	"id": "d16b60b1-450c-4ad5-84ba-8dd98c0ee02c",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.370961+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e9989"
+	},
+	"id": "db84397a-f029-4c7c-88e8-cb85f4ee220f",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/otp/send",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.379370+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e998a"
+	},
+	"id": "ad0920ba-8e8e-4000-97a1-67355d6744f3",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/otp/send",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.458929+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7cf3ed88c2cec90e998b"
+	},
+	"id": "ac8058b9-4f5c-4a48-a6ba-3780ff6bf6bf",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:06:43.600564+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d2f651f453fa10a4533"
+	},
+	"id": "ced016d2-79b3-4fa4-946e-b44904b966ac",
+	"ip_address": "81.251.48.188",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:43.797841+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Payload: ' OR '1'='1' --"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d2f651f453fa10a4534"
+	},
+	"id": "c77a69a7-17d0-4cd7-b81e-6439f5415b38",
+	"ip_address": "183.180.31.89",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:43.842245+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d2f651f453fa10a4535"
+	},
+	"id": "526dc1e1-78a3-43b8-9dbf-fd5dd788d2dd",
+	"ip_address": "147.190.98.50",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:43.886789+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "150+ req/min – rate limit breached"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d2f651f453fa10a4536"
+	},
+	"id": "007896a0-7904-424a-995a-ac284288a540",
+	"ip_address": "174.195.105.234",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:43.930737+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Non-admin JWT attempted to hit /admin route"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d2f651f453fa10a4537"
+	},
+	"id": "147411b9-b8af-4223-888e-9b9ac94068c0",
+	"ip_address": "172.150.187.247",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:43.975966+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Blocked file: kyc_document.exe (executable)"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d2f651f453fa10a4538"
+	},
+	"id": "390e7c60-3e2b-4c5c-ae58-95f74267a01a",
+	"ip_address": "104.198.214.223",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:43.995480+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Pattern matched: (\\bor\\b|\\band\\b)\\s+['\\\"]?1['\\\"]?\\s*=\\s*['\\\"]?1"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a4539"
+	},
+	"id": "9ff9d759-bdf5-4095-9959-d0f10ebda4db",
+	"ip_address": "154.175.252.124",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.062650+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Payload: <script>alert(1)</script>"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a453a"
+	},
+	"id": "0ca963c6-6258-47a5-854d-d2e7adea50c4",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.219422+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Role=anonymous"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a453b"
+	},
+	"id": "1bf2fa01-452b-4ff1-95e9-2f81565fe3f9",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.240409+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 22, 'unique_endpoints': 9, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a453c"
+	},
+	"id": "c58f3fa1-3434-4d6b-80c3-85a6ac0ccdcc",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.491253+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 23, 'unique_endpoints': 9, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a453d"
+	},
+	"id": "8dc2bf6d-ea19-4836-aeec-103e62169243",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.492322+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_5da988aa@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a453e"
+	},
+	"id": "83acbbc6-0c9a-4818-b4c9-6b9b3fd91eab",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.535412+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 24, 'unique_endpoints': 10, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a453f"
+	},
+	"id": "c0c2f7bf-c0a8-4a5d-a424-9fe7fefc4c80",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.617035+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 25, 'unique_endpoints': 10, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a4540"
+	},
+	"id": "7d95a10c-ceb9-48a6-a25d-974ef54a5620",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.618343+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_5da988aa@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a4541"
+	},
+	"id": "7bd95f10-b2a0-4889-992a-2c05dfa74afb",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.625649+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 26, 'unique_endpoints': 10, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a4543"
+	},
+	"id": "bdbcfc43-ba11-4cf5-8e1a-5f7f3aebf3be",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.674724+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 27, 'unique_endpoints': 10, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a4544"
+	},
+	"id": "253950c1-8fed-401c-895e-46ca95ed8164",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/health",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.722876+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 28, 'unique_endpoints': 11, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a4545"
+	},
+	"id": "07c68bd1-5284-453d-98aa-daefc166ee44",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.767856+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 29, 'unique_endpoints': 11, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a4546"
+	},
+	"id": "862a9cc8-c6b9-4d4e-b067-05cfb5f9b9a0",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.768910+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_5da988aa@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a4547"
+	},
+	"id": "1fb6ecab-9f72-418c-a703-4922ed603359",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/register",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.780139+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 30, 'unique_endpoints': 12, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d30651f453fa10a4548"
+	},
+	"id": "57750fec-9feb-4bd8-8f43-dea4c18e3f07",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/register",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:44.826063+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 31, 'unique_endpoints': 12, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d31651f453fa10a454a"
+	},
+	"id": "a4170544-6460-4a47-8b6d-d120330655d9",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:45.078630+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 32, 'unique_endpoints': 12, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d31651f453fa10a454b"
+	},
+	"id": "fd3153f1-3027-4bdf-8263-34768436985c",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:45.079765+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=bf_5da988aa@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d31651f453fa10a454c"
+	},
+	"id": "f49c7aa0-3b3c-4266-8da4-c11116768d77",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:45.163402+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 33, 'unique_endpoints': 12, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d31651f453fa10a454e"
+	},
+	"id": "a4a6795d-3adf-48de-bc1a-c7874d840c29",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:45.184878+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 34, 'unique_endpoints': 12, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d31651f453fa10a454f"
+	},
+	"id": "d0ca3e44-9b0d-424b-8eac-c0a9e5d88159",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:45.186325+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "5+ failures for bf_5da988aa@example.com"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d31651f453fa10a4550"
+	},
+	"id": "98f3e982-11f9-4732-8fd6-c72e8566e0ed",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Blocked IP Attempt",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:45.212151+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "IP is on active block list"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d31651f453fa10a4551"
+	},
+	"id": "e0871683-07ca-4082-954a-f1cc306f799a",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:45.342676+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 36, 'unique_endpoints': 13, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d31651f453fa10a4552"
+	},
+	"id": "61e7169b-9745-4510-89f2-8f10dbe133dc",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:45.570275+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 37, 'unique_endpoints': 13, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d31651f453fa10a4554"
+	},
+	"id": "720b87a1-653a-4bcc-9415-820eef58ff44",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:45.675158+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 38, 'unique_endpoints': 13, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d31651f453fa10a4555"
+	},
+	"id": "30002017-8a89-4a40-8eb7-47f8640b24c7",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/otp/send",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:45.966980+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 40, 'unique_endpoints': 14, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d32651f453fa10a4556"
+	},
+	"id": "b02d148d-b8e9-470a-8de2-b0b87b0293d4",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/otp/verify",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:46.025950+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 42, 'unique_endpoints': 15, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d32651f453fa10a4557"
+	},
+	"id": "b10a1317-2b29-444e-83fc-b038b272788e",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/otp/send",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:46.085797+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 43, 'unique_endpoints': 15, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d32651f453fa10a4558"
+	},
+	"id": "441951c9-b8da-40d4-8640-ed1cd9f4bac4",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:07:46.193783+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 44, 'unique_endpoints': 15, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d69651f453fa10a4559"
+	},
+	"id": "4d8404de-bec5-4ee1-819c-844e9678e0c3",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:41.847575+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.712 features={'rpm': 46, 'unique_endpoints': 15, 'id_diversity': 1}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d6e651f453fa10a455a"
+	},
+	"id": "cca59059-d4dc-4ab4-aa88-edca1445c507",
+	"ip_address": "144.195.50.82",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:46.592899+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Payload: ' OR '1'='1' --"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d73651f453fa10a455b"
+	},
+	"id": "a46b747a-df74-4593-a52e-41406e2074db",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/logout",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:51.153688+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 23, 'unique_endpoints': 8, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d73651f453fa10a455c"
+	},
+	"id": "aa4bd206-36f3-4dcb-9525-dd0da4ffa41a",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:51.821137+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 24, 'unique_endpoints': 8, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a455d"
+	},
+	"id": "4bb6124a-00f3-486a-b359-4cb65d3464ce",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.146710+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 26, 'unique_endpoints': 10, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a455e"
+	},
+	"id": "09630fec-9d30-47ba-8aa0-a8d4603b5b3f",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.150278+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 26, 'unique_endpoints': 10, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a455f"
+	},
+	"id": "986dfd6a-3e76-4d1a-92b4-9fd254991311",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.248391+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 29, 'unique_endpoints': 11, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a4560"
+	},
+	"id": "77c03ab5-7703-41bc-b0e6-27f9b1d0c970",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.253273+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 29, 'unique_endpoints': 11, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a4561"
+	},
+	"id": "020bb2af-6c34-43e1-b0a5-2f9dfec26a00",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/list",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.257003+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 29, 'unique_endpoints': 11, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a4562"
+	},
+	"id": "dd2e623a-f602-4cb6-b40c-6888ece61e5e",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/list",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.310001+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 30, 'unique_endpoints': 11, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a4563"
+	},
+	"id": "010183d4-6ac3-40b3-a435-afd8020039ae",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.481900+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 31, 'unique_endpoints': 12, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a4565"
+	},
+	"id": "a182028c-11e7-4abf-8982-66d9ffd3073c",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.549583+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 32, 'unique_endpoints': 12, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a4566"
+	},
+	"id": "4336a266-7edc-438b-a000-4bcd483c574f",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.555600+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 33, 'unique_endpoints': 12, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a4567"
+	},
+	"id": "1f210bf1-a34d-4445-9b7a-40e911938014",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.643310+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 34, 'unique_endpoints': 12, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a4568"
+	},
+	"id": "0046d19e-d94f-4046-8daa-23b34beee31f",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.649746+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 35, 'unique_endpoints': 12, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7d74651f453fa10a4569"
+	},
+	"id": "51be2319-f6c7-4246-9558-ef3dd5cf1c4c",
+	"ip_address": "104.198.214.223",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:08:52.847791+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 36, 'unique_endpoints': 13, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f28651f453fa10a456d"
+	},
+	"id": "863ad685-4878-4f04-a3d9-9d96696b7513",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/list",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:08.453551+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 15, 'unique_endpoints': 6, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f31651f453fa10a456e"
+	},
+	"id": "ccfaf07a-9e95-48fa-a59c-44a838c68497",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:17.287822+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 15, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f31651f453fa10a4570"
+	},
+	"id": "71763160-b768-44df-9f33-5d10eff2da02",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:17.708908+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 16, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f31651f453fa10a4571"
+	},
+	"id": "508a1149-167d-4136-af13-e8801fd55ed1",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:17.713891+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 17, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f32651f453fa10a4572"
+	},
+	"id": "2544e7c9-6a48-45e3-bb0d-b89e55daca82",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:18.166067+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 18, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f32651f453fa10a4573"
+	},
+	"id": "e6166730-2805-461e-bf19-3a56c7038f64",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:18.171926+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 19, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f36651f453fa10a4574"
+	},
+	"id": "99ff77d5-943d-4b77-8667-a30dc6a7aa48",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/list",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:22.282706+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 20, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f36651f453fa10a4575"
+	},
+	"id": "89357671-b273-4ec5-b967-fe6ff34d590e",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/list",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:22.644224+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 21, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f39651f453fa10a4576"
+	},
+	"id": "a3590fce-f837-4646-8d63-52a81ca28715",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:25.642582+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 22, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f3a651f453fa10a4578"
+	},
+	"id": "198ac1db-2b5c-4ffe-aef7-fb77b24c16c4",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:26.255780+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 23, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f3a651f453fa10a4579"
+	},
+	"id": "30fd62d0-40b9-43a1-b628-d60d3949d20d",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:26.262172+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 24, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f3a651f453fa10a457a"
+	},
+	"id": "0e86d78a-c31a-4768-a88c-f6d12c5897e5",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:26.884128+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 25, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f3a651f453fa10a457b"
+	},
+	"id": "96fc5381-3efa-4653-8065-bdd04c5ac1b3",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:26.889008+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 26, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f3e651f453fa10a457c"
+	},
+	"id": "cb49e20c-0a3f-4c85-9860-b1c545625cab",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/list",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:30.358005+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 27, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f3e651f453fa10a457d"
+	},
+	"id": "fc021ec6-a219-4cca-ba9e-36c55cc4068d",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/list",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:30.690688+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 28, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f40651f453fa10a457e"
+	},
+	"id": "5b4654e1-a6cf-443a-bc4e-5f1c4d1955a1",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/connect",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:32.532094+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 29, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f41651f453fa10a4580"
+	},
+	"id": "a97c602b-3476-46eb-b138-38f2a483e473",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:33.058192+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 30, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f41651f453fa10a4581"
+	},
+	"id": "aed018f8-50fc-453e-9ed4-77903566342f",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:33.063191+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 31, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f41651f453fa10a4582"
+	},
+	"id": "41ebc9b9-0963-4d4c-a257-99ad74dda665",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:33.956676+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 32, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f7f41651f453fa10a4583"
+	},
+	"id": "9886f85a-0972-4b59-9f08-910c698fb5b3",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:16:33.961433+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.754 features={'rpm': 33, 'unique_endpoints': 5, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f8100651f453fa10a4587"
+	},
+	"id": "91dcd0c5-8e89-48e5-b1d1-d801cbcb4a0d",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:24:00.871752+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=admin@securelend.io"
+},
+{
+	"_id": {
+		"$oid": "6a5f810b651f453fa10a4588"
+	},
+	"id": "23660a1c-9386-4625-bbc1-9aaa9d9fdd22",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Failed Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:24:11.678742+00:00",
+	"status": "flagged",
+	"severity": "low",
+	"details": "email=admin@securelend.io"
+},
+{
+	"_id": {
+		"$oid": "6a5f842f651f453fa10a4589"
+	},
+	"id": "97439b0e-c458-49e7-8d56-c3430ae769f5",
+	"ip_address": "64.2.158.91",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:35.917075+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"details": "Payload: ' OR '1'='1' --"
+},
+{
+	"_id": {
+		"$oid": "6a5f8434651f453fa10a458a"
+	},
+	"id": "13954b39-d11c-4eab-ad00-517c004492fd",
+	"ip_address": "76.209.151.220",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:40.641254+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a5f843d651f453fa10a458b"
+	},
+	"id": "802ed399-5870-41ba-817d-4baf7ee3a88e",
+	"ip_address": "183.21.128.213",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:49.881314+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "150+ req/min – rate limit breached"
+},
+{
+	"_id": {
+		"$oid": "6a5f843f651f453fa10a458c"
+	},
+	"id": "e9764c40-4540-443c-85d2-efe5d452a45e",
+	"ip_address": "159.34.250.28",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:51.642042+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Non-admin JWT attempted to hit /admin route"
+},
+{
+	"_id": {
+		"$oid": "6a5f8440651f453fa10a458d"
+	},
+	"id": "b264fc70-f361-482e-9b56-f5973a8a51de",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:52.407132+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "62 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8440651f453fa10a458e"
+	},
+	"id": "d47d801d-1224-4fb7-a426-54d5a33bcd1a",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:52.407225+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "62 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8440651f453fa10a458f"
+	},
+	"id": "935f127b-d5a6-4038-adea-069a12a65881",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:52.407290+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "62 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8440651f453fa10a4590"
+	},
+	"id": "b3a0d992-bb27-467f-a5c5-e5c89e5ba9c6",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:52.411833+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "63 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8440651f453fa10a4591"
+	},
+	"id": "6e43abec-d179-4a2b-9767-607a5b05c8eb",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:52.416980+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "64 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8440651f453fa10a4592"
+	},
+	"id": "8347e3b3-8f3a-41c3-b17f-087e85924446",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/demo/attack",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:52.997624+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "65 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8440651f453fa10a4593"
+	},
+	"id": "5a944671-f02c-4dc8-bc1d-ae948586b32c",
+	"ip_address": "190.25.34.254",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:52.998934+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Blocked file: kyc_document.exe (executable)"
+},
+{
+	"_id": {
+		"$oid": "6a5f8441651f453fa10a4594"
+	},
+	"id": "0fc94e3c-3189-4a2c-9f5d-97dfd6d22cfe",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:53.330678+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "66 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8441651f453fa10a4595"
+	},
+	"id": "637fc47a-d7ce-4154-a0f5-8adee9a531a5",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:53.332471+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "68 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8441651f453fa10a4596"
+	},
+	"id": "bed7888d-8222-4a52-93c0-af1077c8e213",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:53.332548+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "68 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8441651f453fa10a4597"
+	},
+	"id": "29630ff7-817f-46ed-a65f-f6dcc15e2978",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:53.338206+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "69 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8441651f453fa10a4598"
+	},
+	"id": "36ef8636-f969-4425-827e-c9ede3d35c6f",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:53.339171+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "70 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8442651f453fa10a4599"
+	},
+	"id": "44036d14-3c3b-4096-b0e7-3c84efaeb20c",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/demo/attack",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:54.656482+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "71 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8442651f453fa10a459a"
+	},
+	"id": "5953fd5b-37cf-4d72-ae44-7a9d592ed6ee",
+	"ip_address": "174.250.107.44",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:54.657702+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"details": "Payload: <script>alert(1)</script>"
+},
+{
+	"_id": {
+		"$oid": "6a5f8443651f453fa10a459b"
+	},
+	"id": "3a42e6ab-facf-4e42-a603-b91ec593a631",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:55.075997+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "73 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8443651f453fa10a459c"
+	},
+	"id": "e7210c2c-e633-49d6-8a62-10cfd4b0ec7e",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:55.076460+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "73 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8443651f453fa10a459d"
+	},
+	"id": "79712f2b-25bf-47d1-89ab-a8c560c15f53",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:55.082097+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "74 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8443651f453fa10a459e"
+	},
+	"id": "4fe1b5c9-2ef5-4612-8083-dc6e3c62f49a",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:55.083011+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8443651f453fa10a459f"
+	},
+	"id": "de28a15c-c53a-4541-b864-24605f9aeb4b",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:37:55.083823+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8448651f453fa10a45a0"
+	},
+	"id": "8cf24b5f-ca6a-45e0-b627-948ff955aa8a",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:00.192827+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "72 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8448651f453fa10a45a1"
+	},
+	"id": "bf753597-bc74-450a-b38f-f084c4788f7f",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:00.197614+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "74 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8448651f453fa10a45a2"
+	},
+	"id": "ad001fab-ce57-40d7-af49-51b1e90b9995",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:00.197921+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8448651f453fa10a45a3"
+	},
+	"id": "7c22adfe-3c90-4fbc-bdc5-5d028057f984",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:00.198742+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8448651f453fa10a45a4"
+	},
+	"id": "6e14f9a6-4f04-4934-a962-6dc495296bfd",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:00.201320+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8450651f453fa10a45a5"
+	},
+	"id": "00f23a13-2010-46c1-9582-1485f6571aaa",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:08.217944+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "73 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8450651f453fa10a45a6"
+	},
+	"id": "f56d73ca-94f8-4764-add5-225f7f7ec56b",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:08.218389+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "73 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8450651f453fa10a45a7"
+	},
+	"id": "4f36c00e-ddef-4ab4-8ebd-b9e64a99cea8",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:08.225375+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8450651f453fa10a45a8"
+	},
+	"id": "f792da27-7e92-424a-87c2-b243a328dabe",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:08.225697+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8450651f453fa10a45a9"
+	},
+	"id": "be3a94e3-9b03-4a60-b46b-d2882935ba1d",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:08.232545+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8458651f453fa10a45aa"
+	},
+	"id": "fb38e010-6b02-40a1-9f75-a3427848390d",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:16.189240+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "73 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8458651f453fa10a45ab"
+	},
+	"id": "4c504556-7735-4fa3-91d4-944c2c1e94d4",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:16.189703+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "73 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8458651f453fa10a45ac"
+	},
+	"id": "ac9f8d54-7548-4282-be0c-ed6f9beb8132",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:16.196247+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8458651f453fa10a45ad"
+	},
+	"id": "6142b599-cf9b-4917-9bd2-d298c5686560",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:16.196665+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8458651f453fa10a45ae"
+	},
+	"id": "0e34386c-18ec-4acd-840a-786d1fdfa5aa",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:16.199137+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8461651f453fa10a45af"
+	},
+	"id": "5067fdfd-f81c-4e52-bfe1-62154525f493",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:25.174143+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "72 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8461651f453fa10a45b0"
+	},
+	"id": "1af8c4fb-ce89-4c58-acd4-e054c594b79c",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:25.178485+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "73 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8461651f453fa10a45b1"
+	},
+	"id": "3cbb2975-0e83-4868-b11d-8a9972540d0c",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:25.179696+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "74 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8461651f453fa10a45b2"
+	},
+	"id": "8fedaff8-ae4c-4a8f-8b02-e5a340d0203b",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:25.181761+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8461651f453fa10a45b3"
+	},
+	"id": "06bcce7d-b9fe-4a46-8363-d4fa203d832c",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:25.189965+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8469651f453fa10a45b4"
+	},
+	"id": "501500c9-e8a1-49a5-a1a5-355d7fe76469",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:33.174520+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "72 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8469651f453fa10a45b5"
+	},
+	"id": "80bbd4d5-8522-4c4d-a93b-b902e3d65722",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:33.176033+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "73 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8469651f453fa10a45b6"
+	},
+	"id": "96a1f683-8b12-4be2-94d1-6e902a00733c",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:33.181083+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8469651f453fa10a45b7"
+	},
+	"id": "81f27603-b21b-4f62-af12-e8454292ae8c",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:33.181213+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8469651f453fa10a45b8"
+	},
+	"id": "bfbf3d73-9eba-45d7-8892-3c6ebccc1dc1",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:33.181271+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8471651f453fa10a45b9"
+	},
+	"id": "f185ace7-170b-4e9e-be35-c39401c67278",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:41.175994+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "65 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8471651f453fa10a45ba"
+	},
+	"id": "ff43c0f6-76da-4055-bc5c-64989f0c41c4",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:41.178941+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "66 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8471651f453fa10a45bb"
+	},
+	"id": "37d58ce7-7d8a-4500-b8ec-aa0c1d1f2ddc",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:41.181302+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "67 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8471651f453fa10a45bc"
+	},
+	"id": "b4c16d4f-cf35-4260-b075-30c83db738ff",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:41.185730+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "68 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8471651f453fa10a45bd"
+	},
+	"id": "e96ecd22-a4e9-4c83-8bf9-0326a7b63afa",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:41.189413+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "69 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8479651f453fa10a45be"
+	},
+	"id": "6a0e17cf-bf23-43f5-a53e-c2937b70251e",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:49.171685+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "61 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8479651f453fa10a45bf"
+	},
+	"id": "32da39d6-9fb5-4bd4-9918-af4cdecb114f",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:49.173652+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "62 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8479651f453fa10a45c0"
+	},
+	"id": "b5938909-2d35-4ef5-a39c-f21f7a92e0a4",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:49.177385+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "63 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8479651f453fa10a45c1"
+	},
+	"id": "9af39f18-ee07-4750-8b9d-426265ee6698",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:49.180617+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "64 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a5f8482651f453fa10a45c2"
+	},
+	"id": "f48e2eed-4552-4ac3-9119-2726a815b3e2",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/logout",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:38:58.529586+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 41, 'unique_endpoints': 6, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f84a4651f453fa10a45c3"
+	},
+	"id": "f80ef7d3-c364-45a6-a5fa-2912ccb45f2b",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:39:32.838196+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 22, 'unique_endpoints': 7, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f84a5651f453fa10a45c4"
+	},
+	"id": "e3ecac72-6a65-4be0-9005-e299aab832c5",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:39:33.519647+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 18, 'unique_endpoints': 8, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f84a5651f453fa10a45c5"
+	},
+	"id": "05859d7e-de19-4f39-87ec-79b943f97878",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:39:33.524585+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 19, 'unique_endpoints': 9, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f84a5651f453fa10a45c6"
+	},
+	"id": "5777aa47-c8d1-40a7-bfe7-1828fc5da4ed",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/bank/status",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:39:33.896160+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 20, 'unique_endpoints': 9, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a5f84a5651f453fa10a45c7"
+	},
+	"id": "f304b2b6-209d-4398-bf9a-ebdaebc03cbe",
+	"ip_address": "106.219.124.21",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/loans/me",
+	"user_id": null,
+	"timestamp": "2026-07-21T14:39:33.903317+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"details": "score=0.764 features={'rpm': 21, 'unique_endpoints': 9, 'id_diversity': 0}"
+},
+{
+	"_id": {
+		"$oid": "6a611917e83d18a052b497f9"
+	},
+	"id": "1f174d22-2980-461f-909b-bf285b153b1a",
+	"ip_address": "34.170.12.145",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:25:11.511561+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"source": "rule",
+	"details": "Pattern matched: (\\bor\\b|\\band\\b)\\s+['\\\"]?1['\\\"]?\\s*=\\s*['\\\"]?1"
+},
+{
+	"_id": {
+		"$oid": "6a611917e83d18a052b497fa"
+	},
+	"id": "f3b75208-e68a-47f2-a620-68263a718c7c",
+	"ip_address": "34.170.12.145",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/otp/send",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:25:11.642616+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Pattern matched: <script[^>]*>"
+},
+{
+	"_id": {
+		"$oid": "6a611917e83d18a052b497fb"
+	},
+	"id": "f8b95d9d-a0ca-4c12-bba7-882ea54719cb",
+	"ip_address": "34.170.12.145",
+	"attack_type": "Normal",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:25:11.799051+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "ml",
+	"details": "predicted=normal conf=0.882 anomaly=-0.001 (thr=-0.090)"
+},
+{
+	"_id": {
+		"$oid": "6a611928e83d18a052b497fc"
+	},
+	"id": "88c4c621-4c71-43c9-a869-864f0f55ec53",
+	"ip_address": "34.170.12.145",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:25:28.372820+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=sql_injection conf=0.903 anomaly=0.006 (thr=-0.090)"
+},
+{
+	"_id": {
+		"$oid": "6a6119583b8718fb7abae0d0"
+	},
+	"id": "0f17d939-9aa8-43fb-98fe-c8cbc1f37962",
+	"ip_address": "34.170.12.145",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:26:16.936061+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=sql_injection conf=0.808 anomaly=0.044 (thr=0.168)"
+},
+{
+	"_id": {
+		"$oid": "6a611b45308775325795f06f"
+	},
+	"id": "d301fb08-78c0-4b55-b4e2-10fcaa82163a",
+	"ip_address": "34.170.12.145",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:29.072453+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=sql_injection conf=0.804 anomaly=0.020 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b45308775325795f070"
+	},
+	"id": "5b78f824-f820-48da-abfb-3b9f9f7725de",
+	"ip_address": "34.170.12.145",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:29.726592+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"source": "rule",
+	"details": "Pattern matched: (\\bor\\b|\\band\\b)\\s+['\\\"]?1['\\\"]?\\s*=\\s*['\\\"]?1"
+},
+{
+	"_id": {
+		"$oid": "6a611b46308775325795f071"
+	},
+	"id": "82898356-e180-4767-b41b-6dbb189d5544",
+	"ip_address": "171.10.40.181",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:30.507923+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"source": "rule",
+	"details": "Payload: ' OR '1'='1' --"
+},
+{
+	"_id": {
+		"$oid": "6a611b46308775325795f072"
+	},
+	"id": "c96b8e4a-6a68-4d0c-80ac-4e0071be65d0",
+	"ip_address": "171.10.40.181",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:30.539798+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=sql_injection conf=0.891 anomaly=0.050 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b46308775325795f073"
+	},
+	"id": "4193e693-e0a5-41dc-a7e5-32204ee62c3b",
+	"ip_address": "121.236.138.170",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:30.616521+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a611b46308775325795f074"
+	},
+	"id": "659eb943-8496-4ef8-8882-9e3f47e0163b",
+	"ip_address": "121.236.138.170",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:30.648336+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=brute_force_login conf=0.880 anomaly=0.061 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b46308775325795f075"
+	},
+	"id": "8595a5fd-9905-45a9-961a-ee04dd8d0d8b",
+	"ip_address": "121.77.224.94",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:30.709835+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "150+ req/min – rate limit breached"
+},
+{
+	"_id": {
+		"$oid": "6a611b46308775325795f076"
+	},
+	"id": "86ec9e57-b937-45c1-a050-8184fadfb0b8",
+	"ip_address": "121.77.224.94",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:30.742617+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=bot_flood conf=0.986 anomaly=-0.050 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b46308775325795f077"
+	},
+	"id": "d8bd8fec-afc8-486e-a104-60ec937e3936",
+	"ip_address": "151.82.23.136",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:30.797835+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Non-admin JWT attempted to hit /admin route"
+},
+{
+	"_id": {
+		"$oid": "6a611b46308775325795f078"
+	},
+	"id": "4423804c-e380-42dc-a708-165e32b49b7b",
+	"ip_address": "151.82.23.136",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:30.832128+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=unauthorized_admin conf=0.979 anomaly=0.111 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b46308775325795f079"
+	},
+	"id": "f7b1a906-d6ee-45d1-af6d-df80692ef3be",
+	"ip_address": "49.135.247.251",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:30.885635+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Blocked file: kyc_document.exe (executable)"
+},
+{
+	"_id": {
+		"$oid": "6a611b46308775325795f07a"
+	},
+	"id": "1b31061e-08be-4d29-a1dd-bdb794596383",
+	"ip_address": "49.135.247.251",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:30.917095+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=malicious_upload conf=1.000 anomaly=0.073 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b46308775325795f07b"
+	},
+	"id": "d6d641f3-11ab-4430-a249-a3708078e956",
+	"ip_address": "70.213.56.165",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:30.980423+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Payload: <script>alert(1)</script>"
+},
+{
+	"_id": {
+		"$oid": "6a611b47308775325795f07c"
+	},
+	"id": "3bf7dc89-2a2a-4d54-8f47-21aaecf39c97",
+	"ip_address": "70.213.56.165",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:31.012240+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=xss_attempt conf=0.977 anomaly=-0.000 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b47308775325795f07d"
+	},
+	"id": "b8e230df-8888-4091-92a3-e7b71445a842",
+	"ip_address": "58.214.166.252",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:31.063346+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a611b47308775325795f07e"
+	},
+	"id": "a9bec7d6-0063-42d8-b9b7-17bd09c33f92",
+	"ip_address": "58.214.166.252",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:31.094556+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=brute_force_login conf=0.880 anomaly=0.061 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b47308775325795f07f"
+	},
+	"id": "2bb2a7cd-630b-438e-b8cd-792ebdac02d1",
+	"ip_address": "34.170.12.145",
+	"attack_type": "Normal",
+	"endpoint": "/api/bank/list",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:31.489322+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "ml",
+	"details": "predicted=normal conf=0.622 anomaly=-0.044 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b62a8527dcbf42d9f66"
+	},
+	"id": "2522a542-51ca-494c-b4c5-50632a35a16b",
+	"ip_address": "34.170.12.145",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:58.088479+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=sql_injection conf=0.804 anomaly=0.020 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b62a8527dcbf42d9f67"
+	},
+	"id": "d88dbd40-5982-4290-9ae3-a9cec5c78800",
+	"ip_address": "34.170.12.145",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:58.757612+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"source": "rule",
+	"details": "Pattern matched: (\\bor\\b|\\band\\b)\\s+['\\\"]?1['\\\"]?\\s*=\\s*['\\\"]?1"
+},
+{
+	"_id": {
+		"$oid": "6a611b63a8527dcbf42d9f68"
+	},
+	"id": "3157aacc-e5d3-4283-a3a5-a97dfd696e8c",
+	"ip_address": "117.15.175.34",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:59.556284+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"source": "rule",
+	"details": "Payload: ' OR '1'='1' --"
+},
+{
+	"_id": {
+		"$oid": "6a611b63a8527dcbf42d9f69"
+	},
+	"id": "5761b79c-65a2-4f96-a15d-26ebee534b44",
+	"ip_address": "117.15.175.34",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:59.587551+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=sql_injection conf=0.891 anomaly=0.050 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b63a8527dcbf42d9f6a"
+	},
+	"id": "a962af19-cca7-4f95-9282-3da710170ab8",
+	"ip_address": "177.69.86.46",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:59.953073+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a611b63a8527dcbf42d9f6b"
+	},
+	"id": "589eff24-6eaf-4c69-b6f3-3666b9a21a4a",
+	"ip_address": "177.69.86.46",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:34:59.984017+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=brute_force_login conf=0.880 anomaly=0.061 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b64a8527dcbf42d9f6c"
+	},
+	"id": "a0ce8e7f-7a48-4497-8235-a8be95ab4c71",
+	"ip_address": "178.144.124.155",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:00.366146+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "150+ req/min – rate limit breached"
+},
+{
+	"_id": {
+		"$oid": "6a611b64a8527dcbf42d9f6d"
+	},
+	"id": "ebe53e1d-8ffe-439e-8d3a-2fd69bbc8159",
+	"ip_address": "178.144.124.155",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:00.397978+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=bot_flood conf=0.986 anomaly=-0.050 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b64a8527dcbf42d9f6e"
+	},
+	"id": "5c4e90fe-3267-4872-8ae4-3f5ade64b836",
+	"ip_address": "168.55.72.62",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:00.777800+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Non-admin JWT attempted to hit /admin route"
+},
+{
+	"_id": {
+		"$oid": "6a611b64a8527dcbf42d9f6f"
+	},
+	"id": "25ee9c37-7da5-4817-ae3f-a4c19a0575de",
+	"ip_address": "168.55.72.62",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:00.809150+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=unauthorized_admin conf=0.979 anomaly=0.111 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b65a8527dcbf42d9f70"
+	},
+	"id": "cb275b3f-7b43-4a20-8bb4-3a6452a404a1",
+	"ip_address": "88.216.13.87",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:01.177669+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Blocked file: kyc_document.exe (executable)"
+},
+{
+	"_id": {
+		"$oid": "6a611b65a8527dcbf42d9f71"
+	},
+	"id": "c027fe0c-d0bd-45bb-8f92-ceafb047cabc",
+	"ip_address": "88.216.13.87",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:01.209164+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=malicious_upload conf=1.000 anomaly=0.073 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b65a8527dcbf42d9f72"
+	},
+	"id": "3019052e-7cf8-4258-a108-5ce6c8d684d5",
+	"ip_address": "180.132.54.201",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:01.585205+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Payload: <script>alert(1)</script>"
+},
+{
+	"_id": {
+		"$oid": "6a611b65a8527dcbf42d9f73"
+	},
+	"id": "a583bd78-104b-4629-8339-76ac5e435af0",
+	"ip_address": "180.132.54.201",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:01.616304+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=xss_attempt conf=0.977 anomaly=-0.000 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b65a8527dcbf42d9f74"
+	},
+	"id": "f7d6d94f-1cd0-43a9-bc0a-33943f26d215",
+	"ip_address": "171.219.79.105",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:01.992517+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a611b66a8527dcbf42d9f75"
+	},
+	"id": "149fb357-5133-4c9d-9652-2e8cbb8e1216",
+	"ip_address": "171.219.79.105",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:02.025164+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=brute_force_login conf=0.880 anomaly=0.061 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b66a8527dcbf42d9f76"
+	},
+	"id": "ad5683a3-fa09-4441-ae49-f78083337b4b",
+	"ip_address": "34.170.12.145",
+	"attack_type": "Normal",
+	"endpoint": "/api/bank/list",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:02.433889+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "ml",
+	"details": "predicted=normal conf=0.622 anomaly=-0.044 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b6fa8527dcbf42d9f77"
+	},
+	"id": "29820cf4-03bd-448e-8b7b-2d2b9abef342",
+	"ip_address": "34.170.12.145",
+	"attack_type": "Normal",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:11.594281+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "ml",
+	"details": "predicted=normal conf=0.427 anomaly=-0.034 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b6fa8527dcbf42d9f78"
+	},
+	"id": "fde3dfa4-a7ed-405a-819b-fdf74422a3f5",
+	"ip_address": "161.60.241.176",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:11.881844+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"source": "rule",
+	"details": "Payload: ' OR '1'='1' --"
+},
+{
+	"_id": {
+		"$oid": "6a611b6fa8527dcbf42d9f79"
+	},
+	"id": "9366af3c-cc54-4f05-9748-2e3e45fb6341",
+	"ip_address": "161.60.241.176",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:11.912903+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=sql_injection conf=0.891 anomaly=0.050 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b70a8527dcbf42d9f7a"
+	},
+	"id": "30718d84-0c38-4645-9995-2974ca10b90d",
+	"ip_address": "46.118.248.75",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:12.283900+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a611b70a8527dcbf42d9f7b"
+	},
+	"id": "46d5a90d-af92-4943-9cf6-a51324aaad1d",
+	"ip_address": "46.118.248.75",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:12.315106+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=brute_force_login conf=0.880 anomaly=0.061 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b70a8527dcbf42d9f7c"
+	},
+	"id": "e6cff246-252c-4d55-a0fe-4bb4c52d77d5",
+	"ip_address": "167.166.191.144",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:12.696757+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "150+ req/min – rate limit breached"
+},
+{
+	"_id": {
+		"$oid": "6a611b70a8527dcbf42d9f7d"
+	},
+	"id": "6efce3c8-860d-4904-9320-d9d12054a5e5",
+	"ip_address": "167.166.191.144",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:12.727582+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=bot_flood conf=0.986 anomaly=-0.050 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b71a8527dcbf42d9f7e"
+	},
+	"id": "980ef3f6-8c05-4d07-b1fb-409bc75998c7",
+	"ip_address": "181.24.25.86",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:13.099004+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Non-admin JWT attempted to hit /admin route"
+},
+{
+	"_id": {
+		"$oid": "6a611b71a8527dcbf42d9f7f"
+	},
+	"id": "7464cf37-427e-4bab-a752-7f41e255d2b7",
+	"ip_address": "181.24.25.86",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:13.130531+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=unauthorized_admin conf=0.979 anomaly=0.111 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b71a8527dcbf42d9f80"
+	},
+	"id": "99446815-3acb-4790-8d1f-7c48829e5dde",
+	"ip_address": "58.20.54.45",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:13.493554+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Blocked file: kyc_document.exe (executable)"
+},
+{
+	"_id": {
+		"$oid": "6a611b71a8527dcbf42d9f81"
+	},
+	"id": "f057cc85-c19b-472b-9cb8-af94861947ce",
+	"ip_address": "58.20.54.45",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:13.525197+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=malicious_upload conf=1.000 anomaly=0.073 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b71a8527dcbf42d9f82"
+	},
+	"id": "59a10c78-ea6a-43ef-813c-e57bc223bc07",
+	"ip_address": "120.37.219.190",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:13.891641+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Payload: <script>alert(1)</script>"
+},
+{
+	"_id": {
+		"$oid": "6a611b71a8527dcbf42d9f83"
+	},
+	"id": "e980bc80-2e53-4d91-a3c9-8560e50275aa",
+	"ip_address": "120.37.219.190",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:13.924057+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=xss_attempt conf=0.977 anomaly=-0.000 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b72a8527dcbf42d9f84"
+	},
+	"id": "fb4d43e4-2616-470e-bd8e-e45ec10b00c7",
+	"ip_address": "170.237.135.97",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:14.286437+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a611b72a8527dcbf42d9f85"
+	},
+	"id": "34a4d4e9-1292-4623-bd5c-77311e2d60b7",
+	"ip_address": "170.237.135.97",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:14.317788+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=brute_force_login conf=0.880 anomaly=0.061 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b8da8527dcbf42d9f86"
+	},
+	"id": "186a57e1-0c47-4126-aa64-9a9f6aa06819",
+	"ip_address": "34.170.12.145",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:41.544098+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "ml",
+	"details": "predicted=anomalous_traffic conf=0.751 anomaly=-0.028 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b8ea8527dcbf42d9f87"
+	},
+	"id": "fceb9eac-24d2-4305-90ee-75933edb0c29",
+	"ip_address": "198.207.186.60",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:42.585081+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"source": "rule",
+	"details": "Payload: ' OR '1'='1' --"
+},
+{
+	"_id": {
+		"$oid": "6a611b8ea8527dcbf42d9f88"
+	},
+	"id": "61ce6523-98a9-4d7a-b052-da4f51cbebcc",
+	"ip_address": "198.207.186.60",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:42.616463+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=sql_injection conf=0.891 anomaly=0.050 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611b90a8527dcbf42d9f89"
+	},
+	"id": "1a842952-d900-4611-a607-587bf4273e48",
+	"ip_address": "81.75.60.39",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:44.100402+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a611b90a8527dcbf42d9f8a"
+	},
+	"id": "6468ceea-a182-4815-beb4-079c13e0e4a0",
+	"ip_address": "81.75.60.39",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:35:44.131690+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=brute_force_login conf=0.880 anomaly=0.061 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611d061df5372bec1de2bd"
+	},
+	"id": "25a956bf-4dd1-4fa5-ae4a-bb6c6694500b",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/me",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:41:58.012557+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=anomalous_traffic conf=0.944 anomaly=0.047 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611d061df5372bec1de2be"
+	},
+	"id": "fb083550-f8e3-44ae-869a-d9e2c4fa5492",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/me",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:41:58.362443+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=anomalous_traffic conf=0.944 anomaly=0.047 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611d251df5372bec1de2bf"
+	},
+	"id": "a7e23fe4-9cf4-49cb-85ec-2df4bc06aff8",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Anomalous Traffic",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:42:29.929545+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "ml",
+	"details": "predicted=anomalous_traffic conf=0.708 anomaly=0.027 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611db91df5372bec1de2c0"
+	},
+	"id": "a2072aff-d598-4536-80ca-1b57f94cdfaf",
+	"ip_address": "129.75.115.249",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:44:57.740054+00:00",
+	"status": "blocked",
+	"severity": "critical",
+	"source": "rule",
+	"details": "Payload: ' OR '1'='1' --"
+},
+{
+	"_id": {
+		"$oid": "6a611db91df5372bec1de2c1"
+	},
+	"id": "c604799f-57bb-449a-ae45-8d164cf3554c",
+	"ip_address": "129.75.115.249",
+	"attack_type": "SQL Injection",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:44:57.772346+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=sql_injection conf=0.891 anomaly=0.050 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611dc31df5372bec1de2c2"
+	},
+	"id": "f02b05ed-fc7d-4efd-ad0b-5a16c18fbc9c",
+	"ip_address": "162.93.172.250",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:07.356344+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "10 failed login attempts in 60s from same IP"
+},
+{
+	"_id": {
+		"$oid": "6a611dc31df5372bec1de2c3"
+	},
+	"id": "229c9f85-6cb2-4aa3-841f-a1437406e1db",
+	"ip_address": "162.93.172.250",
+	"attack_type": "Brute Force Login",
+	"endpoint": "/api/auth/login",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:07.387557+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=brute_force_login conf=0.880 anomaly=0.061 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611dc41df5372bec1de2c4"
+	},
+	"id": "5a5e95dc-4cef-444b-9e58-b27d4e8aaa85",
+	"ip_address": "119.51.1.133",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:08.708282+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "150+ req/min – rate limit breached"
+},
+{
+	"_id": {
+		"$oid": "6a611dc41df5372bec1de2c5"
+	},
+	"id": "06e21656-1538-41b0-ae1a-d479bf46d7ce",
+	"ip_address": "119.51.1.133",
+	"attack_type": "Bot Flood",
+	"endpoint": "/api/loans/apply",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:08.739624+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=bot_flood conf=0.986 anomaly=-0.050 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611dc61df5372bec1de2c6"
+	},
+	"id": "caa947d0-e0dc-4064-b4e9-f47adaad35ae",
+	"ip_address": "93.68.67.203",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:10.017276+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Non-admin JWT attempted to hit /admin route"
+},
+{
+	"_id": {
+		"$oid": "6a611dc61df5372bec1de2c7"
+	},
+	"id": "1595d0df-63fe-413f-aa1d-5c0e8df52f31",
+	"ip_address": "93.68.67.203",
+	"attack_type": "Unauthorized Admin Access",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:10.048474+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=unauthorized_admin conf=0.979 anomaly=0.111 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611dc61df5372bec1de2c8"
+	},
+	"id": "2902c8eb-0b33-4f0c-a3e5-275848f4d04c",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:10.380939+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "61 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc61df5372bec1de2c9"
+	},
+	"id": "eecf2645-ec14-43f6-bc42-a365f4a6785c",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:10.701917+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "62 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc61df5372bec1de2ca"
+	},
+	"id": "f314b1e8-88fe-4dc8-b550-121a3475b91c",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:10.704783+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "63 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc61df5372bec1de2cb"
+	},
+	"id": "70aeb04c-df96-42ef-9beb-6d499edbb98b",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:10.708222+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "65 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc61df5372bec1de2cc"
+	},
+	"id": "5862f502-4a19-4ab0-82f0-f132d494120a",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:10.708750+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "65 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc61df5372bec1de2cd"
+	},
+	"id": "7532bb9d-a21b-41e2-b95a-348e13f99f76",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:10.711359+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "66 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc71df5372bec1de2ce"
+	},
+	"id": "ebe4ace6-ab96-49c7-be02-4f7f282caa7e",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/demo/attack",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:11.563344+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "67 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc71df5372bec1de2cf"
+	},
+	"id": "c3a0caf6-290c-4faf-bf7e-85359490ae68",
+	"ip_address": "50.59.75.146",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:11.564616+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Blocked file: kyc_document.exe (executable)"
+},
+{
+	"_id": {
+		"$oid": "6a611dc71df5372bec1de2d0"
+	},
+	"id": "561ff693-ea24-46ae-b057-3b0bcff06952",
+	"ip_address": "50.59.75.146",
+	"attack_type": "Malicious File Upload",
+	"endpoint": "/api/upload/kyc",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:11.595810+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=malicious_upload conf=1.000 anomaly=0.073 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611dc71df5372bec1de2d1"
+	},
+	"id": "f940b839-8cf9-4df7-98ff-fd501e745c07",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:11.957391+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "69 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc71df5372bec1de2d2"
+	},
+	"id": "3a0d203c-ad61-4195-bb66-9550f4ba3ebe",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:11.957765+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "69 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc71df5372bec1de2d3"
+	},
+	"id": "45aea4d6-463a-4572-b1a1-1431f879a00d",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:11.963104+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "70 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc71df5372bec1de2d4"
+	},
+	"id": "827c0c96-206c-4e4c-a5a3-2089ddf85d92",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:11.966666+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "71 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc71df5372bec1de2d5"
+	},
+	"id": "c65424dc-934c-4f3f-b1ea-d5d8dadf2502",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:11.969668+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "72 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc81df5372bec1de2d6"
+	},
+	"id": "f392c6be-64ed-4562-90f4-b7d41f1273e9",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/demo/attack",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:12.538005+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "73 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc81df5372bec1de2d7"
+	},
+	"id": "d477209a-02d1-4968-ae65-d059fb9a69aa",
+	"ip_address": "197.183.84.111",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:12.539259+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "rule",
+	"details": "Payload: <script>alert(1)</script>"
+},
+{
+	"_id": {
+		"$oid": "6a611dc81df5372bec1de2d8"
+	},
+	"id": "0e2ca39e-fa30-4e86-82a9-6775b6ae7dd9",
+	"ip_address": "197.183.84.111",
+	"attack_type": "XSS Attempt",
+	"endpoint": "/api/kyc/pan-check",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:12.570549+00:00",
+	"status": "blocked",
+	"severity": "high",
+	"source": "ml",
+	"details": "predicted=xss_attempt conf=0.977 anomaly=-0.000 (thr=-0.052)"
+},
+{
+	"_id": {
+		"$oid": "6a611dc81df5372bec1de2d9"
+	},
+	"id": "732d31a3-8bf9-40d4-8888-14283b778bec",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:12.897144+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "77 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc81df5372bec1de2da"
+	},
+	"id": "15e2e876-902e-452a-8ae6-7a6292f97cf4",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:12.897205+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "77 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc81df5372bec1de2db"
+	},
+	"id": "f43f469c-66ef-44ba-b8ce-754381ab9bf2",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:12.897830+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "77 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc81df5372bec1de2dc"
+	},
+	"id": "ceef581f-6db6-43d1-a5a2-189c8a7f291b",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:12.897880+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "77 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dc81df5372bec1de2dd"
+	},
+	"id": "a22da883-b14b-4f1b-8899-6445de0e16a1",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:12.902586+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "78 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dce1df5372bec1de2de"
+	},
+	"id": "1074df9c-b4f1-4a5d-ae39-f19ebbd58434",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:18.529216+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "74 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dce1df5372bec1de2df"
+	},
+	"id": "b90661d6-8370-449d-a0f9-89909d79418f",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:18.533685+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dce1df5372bec1de2e0"
+	},
+	"id": "dd33d1dc-3d21-4694-aa21-93999e0b41cc",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:18.540424+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "77 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dce1df5372bec1de2e1"
+	},
+	"id": "372a896c-b2dc-470c-ac67-efa1f010f59b",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:18.540525+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "77 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dce1df5372bec1de2e2"
+	},
+	"id": "75634bab-3de9-4782-9b18-f46eb5b6348e",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:18.546318+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "78 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dd61df5372bec1de2e3"
+	},
+	"id": "4368946e-05da-4da6-b8be-e3a39f57f2de",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:26.823094+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dd61df5372bec1de2e4"
+	},
+	"id": "dbbb0c2a-93a1-4d11-afa6-9cbfb025bee2",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:26.823500+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dd61df5372bec1de2e5"
+	},
+	"id": "b36af1b6-4c5e-400c-91a1-eae54dcd6079",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:26.829590+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "77 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dd61df5372bec1de2e6"
+	},
+	"id": "955f191f-cbe1-4a79-b32f-b2d01d1b9319",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:26.830508+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "78 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dd61df5372bec1de2e7"
+	},
+	"id": "f9599bc9-a3aa-4004-9374-9a6f50c1e9d8",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:26.831372+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "78 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dde1df5372bec1de2e8"
+	},
+	"id": "b02de4b4-55b0-4e4c-8c5f-a66258661a01",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:34.527005+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dde1df5372bec1de2e9"
+	},
+	"id": "1fae7a5e-e14b-49c3-b77a-282e4b330aa9",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:34.527313+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dde1df5372bec1de2ea"
+	},
+	"id": "96cc95af-0bc9-446e-892b-26a6f7b9fc4a",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:34.533073+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dde1df5372bec1de2eb"
+	},
+	"id": "ca876e5d-1abb-47ad-91db-4d0066a6f45f",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:34.534154+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "78 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dde1df5372bec1de2ec"
+	},
+	"id": "5e5d2291-7969-457a-b1b1-e1a9900da9f8",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:34.535055+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "78 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611de61df5372bec1de2ed"
+	},
+	"id": "bd1c42c3-7f15-44e1-b570-46428cfdda67",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:42.526360+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "74 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611de61df5372bec1de2ee"
+	},
+	"id": "5a4c1b77-7704-40fe-b083-c0ecdf5f009b",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:42.526736+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "74 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611de61df5372bec1de2ef"
+	},
+	"id": "1b4969dc-a7e2-420b-a10e-d8f32d5b867a",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:42.526791+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "74 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611de61df5372bec1de2f0"
+	},
+	"id": "8d0e7853-aaea-4330-ba65-70c2308ac030",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:42.530425+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611de61df5372bec1de2f1"
+	},
+	"id": "14680770-8ca8-4978-a6ba-6bbc45a06c5c",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:42.531780+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dee1df5372bec1de2f2"
+	},
+	"id": "098cbad1-ed2e-4b15-8167-ad7e308ce410",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:50.523743+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "72 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dee1df5372bec1de2f3"
+	},
+	"id": "d4579341-a102-4c0d-a592-fb3d1c6f7229",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:50.531463+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "74 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dee1df5372bec1de2f4"
+	},
+	"id": "d1567957-584f-4c45-96a4-680630c5d2a5",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:50.532157+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dee1df5372bec1de2f5"
+	},
+	"id": "d96a46b4-6c23-4539-9576-c7bb8f74732b",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:50.532932+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "75 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dee1df5372bec1de2f6"
+	},
+	"id": "eded5242-1f8b-4647-8583-6f604fef5972",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:50.534629+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "76 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611df61df5372bec1de2f7"
+	},
+	"id": "e6b30450-25ce-4a0c-8937-165b35f4eed8",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:58.523886+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "66 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611df61df5372bec1de2f8"
+	},
+	"id": "34e7ec4c-755d-4b62-b55c-f842bbacf50f",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:58.528823+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "67 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611df61df5372bec1de2f9"
+	},
+	"id": "e977df3b-286b-4af0-ad68-49ca33dbf3c8",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:58.533420+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "68 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611df61df5372bec1de2fa"
+	},
+	"id": "64e74ecc-47f1-4bc2-8573-0450beb4d583",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:58.537031+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "69 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611df61df5372bec1de2fb"
+	},
+	"id": "9ced1008-d7b2-4d60-a2c7-169e5c660ea6",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:45:58.554582+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "70 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dfe1df5372bec1de2fc"
+	},
+	"id": "83f35488-4fe5-4192-b18d-ac1a44addd96",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/blocked-ips",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:46:06.540010+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "66 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dfe1df5372bec1de2fd"
+	},
+	"id": "f1023c68-4a1d-410f-8f58-bb1b252fdb9b",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/loans",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:46:06.543261+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "67 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dfe1df5372bec1de2fe"
+	},
+	"id": "66131866-1fcc-4330-8691-75853d2d2025",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/attacks",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:46:06.546817+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "68 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dfe1df5372bec1de2ff"
+	},
+	"id": "d38340b5-0f05-4947-b475-2cd04ab40bdf",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/stats",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:46:06.548044+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "69 requests/min"
+},
+{
+	"_id": {
+		"$oid": "6a611dfe1df5372bec1de300"
+	},
+	"id": "66831f23-0dc8-44fd-ac9b-4f439b3aee98",
+	"ip_address": "106.219.124.2",
+	"attack_type": "Rate Limit Exceeded",
+	"endpoint": "/api/admin/users",
+	"user_id": null,
+	"timestamp": "2026-07-22T19:46:06.562556+00:00",
+	"status": "flagged",
+	"severity": "medium",
+	"source": "rule",
+	"details": "70 requests/min"
+}]
+

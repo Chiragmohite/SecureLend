@@ -90,3 +90,6 @@ credentials.json
 
 backend/memory/test_credentials.md
 backend/uploads/
+
+.emergent/
+.gitconfig

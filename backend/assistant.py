@@ -81,12 +81,32 @@ FALLBACK = (
 )
 
 
-def get_bot_reply(question: str) -> Tuple[str, str]:
-    """Returns (answer, matched_topic). matched_topic is 'fallback' on no match."""
+async def get_bot_reply(question: str) -> Tuple[str, str]:
+    """Returns (answer, matched_topic). matched_topic is 'fallback' if neither
+    the FAQ nor the LLM fallback below could help, or 'llm_fallback' if the
+    LLM answered using grounded FAQ context.
+
+    Order of operations, and why: the keyword FAQ is tried FIRST and always
+    wins on a match -- it's instant, has zero hallucination risk, and this
+    bot states specific real numbers (rates, scoring weights, tenure options)
+    that must stay exactly correct. The LLM is only invoked for genuinely
+    unmatched questions, and even then it's given the actual FAQ text as
+    grounding context in its prompt (see llm_reviewer.answer_with_faq_grounding)
+    rather than being asked to answer freely -- this keeps it from inventing
+    numbers that don't match the real scoring engine, and reduces (does not
+    eliminate) prompt-injection risk on this public, unauthenticated endpoint,
+    since the model is steered toward restating grounded facts rather than
+    improvising."""
     q = question.lower()
     for topic, patterns, answer in FAQ:
         if any(re.search(p, q) for p in patterns):
             return answer, topic
+
+    import llm_reviewer
+    faq_context = "\n".join(f"- {topic}: {answer}" for topic, _, answer in FAQ)
+    llm_answer = await llm_reviewer.answer_with_faq_grounding(question, faq_context)
+    if llm_answer:
+        return llm_answer, "llm_fallback"
     return FALLBACK, "fallback"
 
 

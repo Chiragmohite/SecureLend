@@ -10,7 +10,7 @@ import time
 import uuid
 import os
 from collections import defaultdict, deque
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from typing import Optional
 
 import numpy as np
@@ -59,8 +59,7 @@ MAX_UPLOAD_MB = 5
 
 # ----- In-memory state -----
 _request_log: dict[str, deque] = defaultdict(lambda: deque(maxlen=500))  # ip -> [(ts, endpoint)]
-_login_failures: dict[str, deque] = defaultdict(lambda: deque(maxlen=20))  # "ip:email" -> [ts]
-_ip_failed_login_ts: dict[str, deque] = defaultdict(lambda: deque(maxlen=100))  # ip -> [ts] for ML feature
+_ip_failed_login_ts: dict[str, deque] = defaultdict(lambda: deque(maxlen=100))  # ip -> [ts] for ML feature only (see failed_logins_5min)
 
 # Rate limit thresholds
 RATE_WINDOW_SEC = 60
@@ -74,7 +73,6 @@ BRUTE_FORCE_WINDOW = 300  # 5 min
 DAILY_LOGIN_LIMIT = 3
 DAILY_LOGIN_WINDOW = 86400  # 24h
 DAILY_LOGIN_BLOCK_MIN = 24 * 60  # block for a full day, not just 15 min
-_daily_login_failures: dict[str, deque] = defaultdict(lambda: deque(maxlen=50))  # "ip:email" -> [ts]
 
 # ----- Isolation Forest (trained on synthetic baseline once) -----
 _iso_model: Optional[IsolationForest] = None
@@ -293,44 +291,66 @@ def extract_declared_salary_from_text(text: Optional[str]) -> Optional[float]:
     return None
 
 
-def register_login_failure(ip: str, email: str) -> bool:
-    """Return True if brute-force threshold exceeded."""
-    key = f"{ip}:{email.lower()}"
-    now = time.time()
-    q = _login_failures[key]
-    q.append(now)
-    _ip_failed_login_ts[ip].append(now)
-    recent = [t for t in q if now - t <= BRUTE_FORCE_WINDOW]
-    return len(recent) >= BRUTE_FORCE_LIMIT
+async def register_login_failure(db, ip: str, email: str) -> bool:
+    """Return True if brute-force threshold exceeded.
+
+    Persisted to MongoDB (db.login_failure_events) instead of an in-memory
+    deque -- this is the one that actually gates a lockout, so it needs to
+    survive a server restart and would stay consistent across multiple
+    instances behind a load balancer. See failed_logins_5min() below for
+    the one counter that deliberately stays in-memory."""
+    email = email.lower()
+    now = datetime.now(timezone.utc)
+    _ip_failed_login_ts[ip].append(time.time())  # keep the in-memory ML-feature counter fed
+    await db.login_failure_events.insert_one({"ip": ip, "email": email, "ts": now})
+    cutoff = now - timedelta(seconds=BRUTE_FORCE_WINDOW)
+    count = await db.login_failure_events.count_documents(
+        {"ip": ip, "email": email, "ts": {"$gte": cutoff}}
+    )
+    return count >= BRUTE_FORCE_LIMIT
 
 
-def register_daily_login_failure(ip: str, email: str) -> bool:
+async def register_daily_login_failure(db, ip: str, email: str) -> bool:
     """Separate 24h counter: True if 3+ failed attempts for this ip+email
     today, independent of the fast 5-in-5-min brute-force check above.
-    This catches slow/spaced-out guessing that dodges the fast window."""
-    key = f"{ip}:{email.lower()}"
-    now = time.time()
-    q = _daily_login_failures[key]
-    q.append(now)
-    recent = [t for t in q if now - t <= DAILY_LOGIN_WINDOW]
-    return len(recent) >= DAILY_LOGIN_LIMIT
+    This catches slow/spaced-out guessing that dodges the fast window.
+    Shares the same db.login_failure_events collection as the fast counter
+    above -- both get cleared together on a successful login anyway (see
+    the /auth/login route), so there's no behavioral difference from
+    keeping them in one collection with different time windows."""
+    email = email.lower()
+    now = datetime.now(timezone.utc)
+    # Note: register_login_failure() above already inserted this attempt's
+    # event -- don't insert a second time here, just count against the
+    # wider window.
+    cutoff = now - timedelta(seconds=DAILY_LOGIN_WINDOW)
+    count = await db.login_failure_events.count_documents(
+        {"ip": ip, "email": email, "ts": {"$gte": cutoff}}
+    )
+    return count >= DAILY_LOGIN_LIMIT
 
 
-def clear_daily_login_failures(ip: str, email: str):
-    key = f"{ip}:{email.lower()}"
-    if key in _daily_login_failures:
-        _daily_login_failures[key].clear()
+async def clear_daily_login_failures(db, ip: str, email: str):
+    # Shares storage with clear_login_failures -- see note there.
+    await clear_login_failures(db, ip, email)
 
 
 def failed_logins_5min(ip: str) -> int:
+    """Deliberately stays in-memory (not persisted to Mongo): this feeds the
+    ML feature vector on EVERY request via build_features(), not just login
+    attempts. Adding a DB round-trip here would cost every single request
+    sitewide for a low-stakes input feature, not a security gate -- the
+    persisted counters above are the ones that actually enforce lockouts.
+    Resetting on restart is an acceptable, documented tradeoff for this one."""
     now = time.time()
     return sum(1 for t in _ip_failed_login_ts[ip] if now - t <= 300)
 
 
-def clear_login_failures(ip: str, email: str):
-    key = f"{ip}:{email.lower()}"
-    if key in _login_failures:
-        _login_failures[key].clear()
+async def clear_login_failures(db, ip: str, email: str):
+    """Deletes persisted failure events for this ip+email -- clears both the
+    fast and daily counters together, matching how the only call site
+    (a successful login) always clears both at once."""
+    await db.login_failure_events.delete_many({"ip": ip, "email": email.lower()})
 
 
 async def log_attack(db, *, ip: str, attack_type: str, endpoint: str,

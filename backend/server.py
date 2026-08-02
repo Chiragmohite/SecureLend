@@ -26,6 +26,7 @@ from auth import (
 )
 from scoring import score_loan
 import ids
+import llm_reviewer
 import face_match
 from seed import seed_admin, seed_demo_data
 from sms import send_real_sms, sms_is_configured
@@ -447,8 +448,8 @@ async def login(req: LoginRequest, request: Request, response: Response):
     email = req.email.lower()
     user = await db.users.find_one({"email": email})
     if not user or not verify_password(req.password, user["password_hash"]):
-        exceeded = ids.register_login_failure(ip, email)
-        daily_exceeded = ids.register_daily_login_failure(ip, email)
+        exceeded = await ids.register_login_failure(db, ip, email)
+        daily_exceeded = await ids.register_daily_login_failure(db, ip, email)
         if daily_exceeded:
             await ids.block_ip(db, ip, "Daily Failed-Login Limit (3/day)", duration_min=ids.DAILY_LOGIN_BLOCK_MIN)
             await ids.log_attack(db, ip=ip, attack_type="Daily Login Lockout",
@@ -469,8 +470,8 @@ async def login(req: LoginRequest, request: Request, response: Response):
                              source="rule")
         raise HTTPException(status_code=401, detail="Invalid credentials")
 
-    ids.clear_login_failures(ip, email)
-    ids.clear_daily_login_failures(ip, email)
+    await ids.clear_login_failures(db, ip, email)
+    await ids.clear_daily_login_failures(db, ip, email)
     tok = create_access_token(user["id"], user["email"], user["role"])
     _set_cookies(response, tok)
     user.pop("password_hash", None)
@@ -613,10 +614,18 @@ async def upload_income_proof(request: Request, file: UploadFile = File(...)):
                              endpoint="/api/kyc/income-proof", status="blocked",
                              user_id=user["id"], details=content_violation, severity="medium",
                              source="rule")
+        # Secondary LLM review (optional, additive only): the rule engine has
+        # already made the block decision above -- this only tries to explain
+        # it better. If Ollama isn't running (e.g. in production), this
+        # returns None and we fall back to the original static message
+        # unchanged, so behavior is identical with or without it.
+        llm_explanation = await llm_reviewer.explain_income_proof_rejection(extracted_text, content_violation)
         raise HTTPException(
             status_code=400,
-            detail="This doesn't look like a salary slip / income proof document. "
-                   "Please upload an actual payslip showing pay details (basic pay, HRA, deductions, net pay, etc.).",
+            detail=llm_explanation or (
+                "This doesn't look like a salary slip / income proof document. "
+                "Please upload an actual payslip showing pay details (basic pay, HRA, deductions, net pay, etc.)."
+            ),
         )
 
     # Best-effort: pull the actual salary figure printed on the slip, so a
@@ -833,7 +842,7 @@ async def assistant_ask(req: AssistantAskRequest, request: Request):
                              endpoint="/api/assistant/ask", status="blocked",
                              details=violation, severity="high", source="rule")
         raise HTTPException(status_code=400, detail="Your message couldn't be processed.")
-    answer, matched = get_bot_reply(req.question)
+    answer, matched = await get_bot_reply(req.question)
     return {"answer": answer, "matched_topic": matched}
 
 
@@ -1126,6 +1135,11 @@ async def startup():
     await db.loan_applications.create_index("user_id")
     await db.attack_logs.create_index([("timestamp", -1)])
     await db.blocked_ips.create_index("ip_address")
+    # TTL index: documents auto-delete 25h after insertion (past the 24h daily
+    # lockout window with headroom), so this collection self-cleans and never
+    # grows unbounded -- no cron/manual cleanup job required.
+    await db.login_failure_events.create_index("ts", expireAfterSeconds=25 * 60 * 60)
+    await db.login_failure_events.create_index([("ip", 1), ("email", 1), ("ts", -1)])
 
     # ML baseline
     ids.train_baseline_model()

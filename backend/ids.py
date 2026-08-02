@@ -25,14 +25,26 @@ from sklearn.ensemble import IsolationForest
 TESSERACT_CMD = os.environ.get("TESSERACT_CMD")
 
 # ----- Regex signatures -----
+# SQL_WS tolerates inline comments (/* ... */) used as a separator instead of
+# whitespace -- e.g. "' OR/**/1=1--" -- a classic evasion technique that a
+# plain \s* misses entirely, since /**/ contains no whitespace characters.
+SQL_WS = r"(?:\s|/\*.*?\*/)*"
+
 SQLI_PATTERNS = [
-    re.compile(r"('|(\%27))\s*(or|and)\s*('|(\%27))?\s*\d+\s*=\s*\d+", re.I),
+    re.compile(r"('|(\%27))" + SQL_WS + r"(or|and)" + SQL_WS + r"('|(\%27))?" + SQL_WS + r"\d+" + SQL_WS + r"=" + SQL_WS + r"\d+", re.I),
     re.compile(r"(\bunion\b\s+\bselect\b)", re.I),
     re.compile(r"(--|#|;)\s*(drop|delete|update|insert)\b", re.I),
     re.compile(r"\bdrop\s+table\b", re.I),
     re.compile(r"\bxp_cmdshell\b", re.I),
-    re.compile(r"(\bor\b|\band\b)\s+['\"]?1['\"]?\s*=\s*['\"]?1", re.I),
+    re.compile(r"(\bor\b|\band\b)" + SQL_WS + r"['\"]?1['\"]?" + SQL_WS + r"=" + SQL_WS + r"['\"]?1", re.I),
     re.compile(r"';\s*--", re.I),
+    # Comment-truncation auth bypass: a quote immediately (or near-immediately)
+    # followed by an inline SQL comment marker -- e.g. "admin'--" -- does not
+    # require a semicolon or a drop/delete/update/insert keyword to be a real
+    # attack; the quote+comment combination alone is the tell. Legitimate
+    # input essentially never contains a literal quote directly followed by
+    # -- or #.
+    re.compile(r"['\"]\s*(--|#)", re.I),
 ]
 
 XSS_PATTERNS = [

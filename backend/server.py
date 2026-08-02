@@ -128,12 +128,31 @@ class HybridIDSMiddleware:
         else:
             payload_text = body.decode("utf-8", errors="ignore") + " " + (scope.get("query_string", b"").decode("utf-8", errors="ignore"))
 
+        # Compute the feature vector once, here, before any rule check --
+        # not just before the ML step. Previously this only happened at
+        # step 5, so anything the RULE engine blocked (SQLi, XSS, rate
+        # limit, unauthorized admin) never got its features captured at
+        # all, since the request returned early before reaching step 5.
+        # That made log_ml_inference's "real captured traffic" dataset
+        # blind to everything the rules already catch -- only normal
+        # traffic and ML-only catches ever showed up. Computing it here
+        # means every processed request gets logged, regardless of which
+        # layer (rule or ML) ultimately handles it.
+        features = ids.build_features(
+            ip=ip, path=path, role=role,
+            payload_text=payload_text, payload_bytes=len(body),
+        )
+
         sqli_hit = ids.scan_payload_for_sqli(payload_text)
         if sqli_hit:
             await ids.log_attack(db, ip=ip, attack_type="SQL Injection",
                                  endpoint=path, status="blocked",
                                  details=f"Pattern matched: {sqli_hit[:80]}", severity="critical",
                                  source="rule")
+            await ids.log_ml_inference(db, ip=ip, endpoint=path, features=features, verdict={
+                "predicted_type": "sql_injection", "confidence": None,
+                "anomaly_score": None, "action": "block",
+            })
             return await self._reject(send, 400, "Malicious input detected. Request blocked.")
 
         xss_hit = ids.scan_payload_for_xss(payload_text)
@@ -142,6 +161,10 @@ class HybridIDSMiddleware:
                                  endpoint=path, status="blocked",
                                  details=f"Pattern matched: {xss_hit[:80]}", severity="high",
                                  source="rule")
+            await ids.log_ml_inference(db, ip=ip, endpoint=path, features=features, verdict={
+                "predicted_type": "xss_attempt", "confidence": None,
+                "anomaly_score": None, "action": "block",
+            })
             return await self._reject(send, 400, "Malicious input detected.")
 
         # 3) Rate limiting (rule engine)
@@ -158,6 +181,10 @@ class HybridIDSMiddleware:
                                  endpoint=path, status="blocked",
                                  details=f"{count} requests/min", severity="high",
                                  source="rule")
+            await ids.log_ml_inference(db, ip=ip, endpoint=path, features=features, verdict={
+                "predicted_type": "bot_flood", "confidence": None,
+                "anomaly_score": None, "action": "block",
+            })
             return await self._reject(send, 429, "Rate limit exceeded. IP blocked.")
         if count > ids.RATE_LIMIT:
             await ids.log_attack(db, ip=ip, attack_type="Rate Limit Exceeded",
@@ -171,6 +198,10 @@ class HybridIDSMiddleware:
                                  endpoint=path, status="blocked",
                                  details=f"Role={role or 'anonymous'}", severity="high",
                                  source="rule")
+            await ids.log_ml_inference(db, ip=ip, endpoint=path, features=features, verdict={
+                "predicted_type": "unauthorized_admin", "confidence": None,
+                "anomaly_score": None, "action": "block",
+            })
             return await self._reject(send, 403, "Admin privileges required.")
 
         # 5) ============ Custom ML model (Random Forest + IsolationForest) ============
@@ -182,10 +213,6 @@ class HybridIDSMiddleware:
             scorer = ids.load_ml_scorer()
             if scorer is not None:
                 try:
-                    features = ids.build_features(
-                        ip=ip, path=path, role=role,
-                        payload_text=payload_text, payload_bytes=len(body),
-                    )
                     verdict = scorer(features)
                     await ids.log_ml_inference(db, ip=ip, endpoint=path, features=features, verdict=verdict)
                     if verdict["action"] in ("block", "flag"):

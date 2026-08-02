@@ -420,7 +420,14 @@ def anomaly_score(ip: str) -> tuple[float, dict]:
 _ml_scorer = None  # lazy — score_request callable
 
 SQL_KEYWORDS = re.compile(
-    r"\b(select|union|insert|update|delete|drop|alter|exec|xp_cmdshell|--|;)\b",
+    r"\b(select|union|insert|update|delete|drop|alter|exec|xp_cmdshell)\b"
+    r"|--"          # SQL line comment -- deliberately NOT \b-wrapped, since -- is
+                     # punctuation on both sides and \b never matches there (this
+                     # was silently broken before: `' OR 1=1 --` matched nothing)
+    r"|/\*"         # SQL block comment start
+    r"|\bor\b\s*['\"]?\s*\d+\s*=\s*\d+"    # classic tautology: OR 1=1
+    r"|\band\b\s*['\"]?\s*\d+\s*=\s*\d+"   # classic tautology: AND 1=1
+    r"|\bor\b\s*['\"]\s*\w*\s*['\"]\s*=\s*['\"]?\s*\w*",  # OR '1'='1' (string form)
     re.I,
 )
 SCRIPT_TAG_RE = re.compile(r"<\s*script\b|javascript:|on\w+\s*=", re.I)

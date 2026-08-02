@@ -130,3 +130,4 @@ fpdf2==2.8.7
 twilio==9.4.1
 pdfplumber==0.11.4
 pytesseract==0.3.13
+requests==2.34.2

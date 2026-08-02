@@ -340,6 +340,38 @@ async def log_attack(db, *, ip: str, attack_type: str, endpoint: str,
     return doc
 
 
+async def log_ml_inference(db, *, ip: str, endpoint: str, features: dict, verdict: dict):
+    """Persists the raw feature vector AND the model's verdict for every
+    ML-scored request -- not just the ones that got blocked/flagged, but
+    genuinely normal-looking traffic too. This is what makes real
+    validation possible later: attack_logs only ever stored the final
+    label, never the actual numbers fed into the model, so past traffic
+    can never be replayed or checked against a retrained model. This
+    collection is the fix -- going forward, this *is* real captured
+    traffic (distinct from the synthetic training set in
+    ml/train_ids_model.py), and can be pulled into a genuine held-out
+    validation set once enough accumulates.
+    """
+    doc = {
+        "id": str(uuid.uuid4()),
+        "ip_address": ip,
+        "endpoint": endpoint,
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "features": features,
+        "predicted_type": verdict.get("predicted_type"),
+        "confidence": verdict.get("confidence"),
+        "anomaly_score": verdict.get("anomaly_score"),
+        "action": verdict.get("action"),
+        # Filled in later by a human reviewing real traffic (or by a
+        # deliberate test script that knows what it sent) -- None until
+        # then. This is what turns "captured traffic" into a genuine
+        # labeled validation set rather than just a request log.
+        "true_label": None,
+    }
+    await db.ml_inference_log.insert_one(doc)
+    return doc
+
+
 async def block_ip(db, ip: str, reason: str, duration_min: int = 15):
     now = datetime.now(timezone.utc)
     await db.blocked_ips.update_one(

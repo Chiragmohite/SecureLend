@@ -187,6 +187,7 @@ class HybridIDSMiddleware:
                         payload_text=payload_text, payload_bytes=len(body),
                     )
                     verdict = scorer(features)
+                    await ids.log_ml_inference(db, ip=ip, endpoint=path, features=features, verdict=verdict)
                     if verdict["action"] in ("block", "flag"):
                         pretty = ids.ML_LABEL_TO_ATTACK.get(
                             verdict["predicted_type"], verdict["predicted_type"]

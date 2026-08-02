@@ -225,12 +225,27 @@ class HybridIDSMiddleware:
                             f"anomaly={verdict['anomaly_score']:.3f} "
                             f"(thr={verdict['anomaly_threshold']:.3f})"
                         )
+                        effective_action = verdict["action"]
+                        if effective_action == "block" and path in UPLOAD_ENDPOINTS:
+                            # These endpoints already have dedicated rule-based
+                            # guards: ids.check_upload() (extension + size) and
+                            # ids.validate_income_proof_content() (keyword match
+                            # against extracted text). The ML model's features
+                            # can't reliably tell a large *legitimate* PDF/JPG
+                            # apart from a malicious one here -- payload_size_kb
+                            # alone correlates with its synthetic malicious_upload
+                            # class, so a real salary slip gets blocked purely for
+                            # being a normal-sized file. Downgrade to a flag
+                            # (still visible in the Attack Feed / ML Health tab)
+                            # instead of hard-rejecting a legitimate upload.
+                            effective_action = "flag"
+                            details += " [downgraded: block->flag, upload endpoint has dedicated content validation]"
                         await ids.log_attack(
                             db, ip=ip, attack_type=pretty, endpoint=path,
-                            status="blocked" if verdict["action"] == "block" else "flagged",
+                            status="blocked" if effective_action == "block" else "flagged",
                             severity=verdict["severity"], details=details, source="ml",
                         )
-                        if verdict["action"] == "block":
+                        if effective_action == "block":
                             return await self._reject(send, 403, f"Blocked by IDS ML model ({pretty}).")
                 except Exception as e:
                     import logging

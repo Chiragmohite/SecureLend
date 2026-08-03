@@ -357,6 +357,27 @@ class LoanApplyRequest(BaseModel):
     # hasn't been updated to send a tenure yet.
     tenure_months: int = Field(default=36, ge=6, le=84)
 
+    # Plausibility floor: a declared income like Rs.10/month isn't a real
+    # answer -- without this, such a value sails straight into scoring.py
+    # and produces a technically-consistent-looking score breakdown (other,
+    # genuinely-verified factors like bank stability and employment type
+    # score normally, since they don't depend on this field) even though
+    # the input itself is obvious nonsense. Reject it as invalid input
+    # up front instead, the same way phone/PAN format is rejected above,
+    # rather than letting the scorer produce a misleadingly "explainable"
+    # result from a joke value. Rs.1,000/month is a deliberately low floor
+    # (well under any real minimum wage figure) so this only catches
+    # genuinely implausible values, not just low-but-real income.
+    @field_validator("monthly_salary")
+    @classmethod
+    def _monthly_salary_plausible(cls, v):
+        if 0 < v < 1000:
+            raise ValueError(
+                "That doesn't look like a realistic monthly income. "
+                "Please enter your actual monthly income in rupees."
+            )
+        return v
+
 
 api = APIRouter(prefix="/api")
 

@@ -35,11 +35,16 @@ EMBEDDING_LENGTH = 16
 # be -- pose, lighting, and expression shift the individual distances
 # noticeably even for the same real face. 0.25 proved too strict in
 # practice (two registrations with the same face weren't being caught).
-# Raised to 0.55 as a looser default. See closest_face_distance() below --
-# server.py logs the actual distance on every registration attempt, so
-# real numbers from your own testing can be used to tune this further
-# rather than guessing blind.
-DUPLICATE_FACE_THRESHOLD = 0.55
+# Raised to 0.55, which then proved too loose (two different people --
+# confirmed via real Render logs -- matched at distance 0.4570, well under
+# 0.55). Lowered to 0.38 as a middle point: comfortably below the observed
+# same-person-duplicate range from earlier testing, and with real margin
+# below the confirmed different-people distance of 0.4570. Re-verify with a
+# fresh live test on both cases (same person second account should still
+# block; a different person should not) rather than assuming this number is
+# final -- see closest_face_distance() below, which logs the real distance
+# on every attempt for exactly this kind of recalibration.
+DUPLICATE_FACE_THRESHOLD = 0.38
 
 
 def closest_face_distance(

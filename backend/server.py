@@ -17,7 +17,7 @@ from fastapi.responses import JSONResponse
 from starlette.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
-from pydantic import BaseModel, EmailStr, Field, field_validator
+from pydantic import BaseModel, EmailStr, Field, field_validator, model_validator
 
 import auth as auth_mod
 from auth import (
@@ -377,6 +377,24 @@ class LoanApplyRequest(BaseModel):
                 "Please enter your actual monthly income in rupees."
             )
         return v
+
+    # Cross-field check: existing_emi is only implausible RELATIVE to
+    # declared income -- there's no sensible absolute cap on its own (a high
+    # earner can genuinely have a high EMI). Catches likely data-entry
+    # errors (an extra zero or two typed in) rather than penalizing a
+    # genuinely high-but-real debt burden -- the scorer already handles
+    # that correctly on its own by flooring obligation_headroom at 0
+    # (see scoring.py), it just shouldn't be fed an obvious typo. 10x
+    # monthly income as a single EMI is far beyond anything a real lender
+    # would have already approved, so this is a generous, not strict, cap.
+    @model_validator(mode="after")
+    def _existing_emi_plausible(self):
+        if self.monthly_salary > 0 and self.existing_emi > self.monthly_salary * 10:
+            raise ValueError(
+                "Your existing EMI looks implausibly high compared to your declared "
+                "income -- please double-check the amount you entered."
+            )
+        return self
 
 
 api = APIRouter(prefix="/api")

@@ -33,7 +33,12 @@ export function getFaceLandmarker() {
         outputFaceBlendshapes: false,
         outputFacialTransformationMatrixes: false,
         runningMode: "VIDEO",
-        numFaces: 1,
+        // numFaces: 2 (not 1) so we can actually detect a second person in
+        // frame. With numFaces: 1, MediaPipe silently picks whichever face
+        // it judges "most prominent" and gives no signal that anyone else
+        // was present -- the registration capture below relies on seeing
+        // results.faceLandmarks.length to reject multi-person captures.
+        numFaces: 2,
         // refineLandmarks adds landmarks 468-477: 5 iris points per eye.
         // Without this flag MediaPipe returns only the 468 face-mesh points
         // and no iris data at all.

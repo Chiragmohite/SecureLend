@@ -292,11 +292,14 @@ class RegisterRequest(BaseModel):
     dob: str
     phone: str
     pan: str
-    # Optional 16-float geometric face descriptor computed client-side
-    # (see frontend/src/lib/faceEmbedding.js). None if the user skipped
-    # face verification. Used only for duplicate-registration detection --
-    # see face_match.py.
-    face_embedding: list[float] | None = None
+    # Required 16-float geometric face descriptor computed client-side
+    # (see frontend/src/lib/faceEmbedding.js). Previously optional, which
+    # meant registration's duplicate-face check (see face_match.py) only
+    # ran if the client happened to send one -- skipping face capture
+    # entirely skipped real fraud-prevention, not just a decorative step.
+    # Required now, matching phone/pan below, so every registration goes
+    # through duplicate-face detection.
+    face_embedding: list[float]
 
     @field_validator("phone")
     @classmethod
@@ -315,12 +318,12 @@ class RegisterRequest(BaseModel):
     @field_validator("face_embedding")
     @classmethod
     def _face_embedding(cls, v):
-        # A malformed/wrong-length vector is silently dropped rather than
-        # rejecting the whole registration -- face verification is
-        # optional/skippable elsewhere in the flow, so this shouldn't be a
-        # hard failure point.
-        if v is not None and len(v) != face_match.EMBEDDING_LENGTH:
-            return None
+        # Now that face_embedding is required, a malformed/wrong-length
+        # vector must reject the registration outright -- silently
+        # dropping it (the old behaviour) would recreate the same bypass
+        # this field being required is meant to close.
+        if len(v) != face_match.EMBEDDING_LENGTH:
+            raise ValueError("Face capture failed -- please redo the face scan step.")
         return v
 
 

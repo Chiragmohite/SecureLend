@@ -68,7 +68,7 @@ export default function Register() {
       }
       setFaceStatus("streaming");
     } catch (err) {
-      setCameraError("Camera access denied or unavailable. You can skip this step for now.");
+      setCameraError("Camera access denied or unavailable. Face verification is required to create an account -- please allow camera access and try again.");
       setFaceStatus("idle");
     }
   };
@@ -104,7 +104,16 @@ export default function Register() {
     try {
       const landmarker = await getFaceLandmarker();
       const results = landmarker.detectForVideo(canvas, performance.now());
-      const face = results.faceLandmarks && results.faceLandmarks[0];
+      console.log("faces detected:", results.faceLandmarks?.length, results.faceLandmarks);
+      const faces = results.faceLandmarks || [];
+
+      if (faces.length > 1) {
+        setFaceStatus("streaming");
+        toast.error("More than one face detected in frame -- make sure only you are visible and try again.");
+        return;
+      }
+
+      const face = faces[0];
       const embedding = face ? computeFaceEmbedding(face) : null;
 
       if (!embedding) {
@@ -231,11 +240,6 @@ export default function Register() {
       return;
     }
     irisRafRef.current = requestAnimationFrame(() => irisDetectLoop(landmarker));
-  };
-
-  const skipFace = () => {
-    stopCamera();
-    setFaceStatus("verified");
   };
 
   const [realSms, setRealSms] = useState(false);
@@ -466,11 +470,6 @@ export default function Register() {
                 <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: "var(--sl-primary)" }}>
                   <CheckCircle2 size={18} /> Face verified
                 </div>
-              )}
-              {faceStatus !== "verified" && (
-                <button data-testid="reg-skip-face" onClick={skipFace} className="text-sm underline-offset-4 hover:underline" style={{ color: "var(--sl-muted)" }}>
-                  Skip for now
-                </button>
               )}
             </div>
 

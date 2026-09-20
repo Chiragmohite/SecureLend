@@ -31,10 +31,11 @@ Usage:
     # explanation is a string, or None if the LLM reviewer is unavailable
 """
 import os
+import re
 import httpx
 
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434")
-OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5:7b")
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen3:8b")
 OLLAMA_TIMEOUT_SECONDS = 45.0  # generous: a cold model load (not yet in memory)
 # was observed taking ~25-40s total on this machine before the model responds
 # at all. Once warm, Ollama keeps a model loaded in memory for a few minutes
@@ -44,6 +45,19 @@ OLLAMA_TIMEOUT_SECONDS = 45.0  # generous: a cold model load (not yet in memory)
 # worth-documenting latency: it's a concrete reason a local LLM reviewer
 # belongs in an occasional/async review path, not a synchronous per-request
 # decision gate.
+
+# Reasoning-capable models (qwen3, qwen3.5, deepseek-r1, etc.) can emit a
+# visible "thinking" trace before the actual answer -- e.g.
+# "Thinking...\n<internal reasoning>\n...done thinking.\n\n<real answer>".
+# Depending on the model/quantization this sometimes lands as a separate
+# JSON field and sometimes gets baked directly into the "response" string
+# itself. We only ever read "response" below, so a separate field is
+# already excluded automatically; this regex additionally strips it out
+# if it's embedded inline, so raw chain-of-thought never reaches a user.
+_THINKING_TRACE_RE = re.compile(
+    r"^\s*Thinking\.\.\..*?\.\.\.\s*done thinking\.\s*",
+    re.IGNORECASE | re.DOTALL,
+)
 
 
 async def _ask_ollama(prompt: str) -> str | None:
@@ -55,7 +69,9 @@ async def _ask_ollama(prompt: str) -> str | None:
             )
             resp.raise_for_status()
             data = resp.json()
-            return (data.get("response") or "").strip() or None
+            text = (data.get("response") or "").strip()
+            text = _THINKING_TRACE_RE.sub("", text).strip()
+            return text or None
     except Exception:
         # Ollama not running, model not pulled, network hiccup, timeout, etc.
         # This is expected/normal in production -- fail silently, never raise.

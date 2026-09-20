@@ -43,7 +43,7 @@ export default function BankAssistant() {
   return (
     <div style={{ position: "fixed", bottom: 20, right: 20, zIndex: 1000 }}>
       {open && (
-        <div className="u-card p-0 overflow-hidden" style={{ width: 420, marginBottom: 12, boxShadow: "0 12px 32px rgba(0,0,0,0.18)" }} data-testid="bank-assistant-panel">
+        <div className="u-card p-0 overflow-hidden" style={{ width: 420, marginBottom: 12, background: "#FFFFFF", boxShadow: "0 12px 32px rgba(0,0,0,0.18)" }} data-testid="bank-assistant-panel">
           <div className="px-4 py-3 flex items-center justify-between" style={{ background: "var(--sl-primary)" }}>
             <span className="text-sm font-semibold text-white">Ask the bank</span>
             <button onClick={() => setOpen(false)} aria-label="Close" data-testid="bank-assistant-close">
@@ -70,7 +70,7 @@ export default function BankAssistant() {
             )}
           </div>
 
-          <div className="border-t px-3 py-2 flex gap-2" style={{ borderColor: "var(--sl-border)" }}>
+          <div className="border-t px-3 py-2 flex gap-2" style={{ borderColor: "var(--sl-border)", background: "#FFFFFF" }}>
             <input
               data-testid="bank-assistant-input"
               value={input}

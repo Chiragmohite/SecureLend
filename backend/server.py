@@ -277,7 +277,7 @@ app.add_middleware(HybridIDSMiddleware)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_credentials=True,
+    allow_credentials=False,  # auth uses the Authorization header, not cookies
     allow_origins=os.environ.get("CORS_ORIGINS", "*").split(","),
     allow_methods=["*"],
     allow_headers=["*"],
@@ -415,14 +415,8 @@ async def health():
 
 
 # ============ Auth ============
-def _set_cookies(response: Response, token: str):
-    response.set_cookie(
-        key="access_token", value=token, httponly=True, secure=False,
-        samesite="lax", max_age=8 * 3600, path="/",
-    )
-
-
 def _clear_cookies(response: Response):
+    # Auth is Bearer-only now; this just clears any stale cookie from older sessions.
     response.delete_cookie("access_token", path="/")
 
 
@@ -477,7 +471,6 @@ async def register(req: RegisterRequest, response: Response):
     }
     await db.users.insert_one(doc)
     tok = create_access_token(uid, email, "user")
-    _set_cookies(response, tok)
     doc.pop("password_hash", None)
     doc.pop("_id", None)
     doc.pop("face_embedding", None)
@@ -515,7 +508,6 @@ async def login(req: LoginRequest, request: Request, response: Response):
     await ids.clear_login_failures(db, ip, email)
     await ids.clear_daily_login_failures(db, ip, email)
     tok = create_access_token(user["id"], user["email"], user["role"])
-    _set_cookies(response, tok)
     user.pop("password_hash", None)
     user.pop("_id", None)
     user.pop("face_embedding", None)

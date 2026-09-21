@@ -40,9 +40,8 @@ def decode_token(token: str) -> dict:
 
 
 def extract_token(request: Request) -> str | None:
-    tok = request.cookies.get("access_token")
-    if tok:
-        return tok
+    # Bearer header only: the frontend sends the JWT from localStorage, so
+    # accepting the cookie too would just add unneeded CSRF surface.
     auth = request.headers.get("Authorization", "")
     if auth.startswith("Bearer "):
         return auth[7:]
